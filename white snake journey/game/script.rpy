@@ -2,8 +2,8 @@
 
 # 声明此游戏使用的角色。颜色参数可使角色姓名着色。
 
-define me = Character("我",color="blue")
-define xiaoqing = Character("小青")
+define me = Character("我",color="#CCCCCC")
+define xiaoqing = Character("小青",color="#00FFFF")
 # 游戏在此开始。
 
 
@@ -109,11 +109,11 @@ label xu_first_section:
     "距离你救下那位陌生的白衣女子已经过去了三天，她还迟迟未醒，你像往常一样带着一筐草药满载而归。"
     return
 
-define xiaobai = Character("小白")
-define laofuren = Character("老妇人")
-define axuan = Character("阿宣")
-define dudou = Character("肚兜")
-define chunming = Character("村民")
+define xiaobai = Character("小白",color="#FFFFFF")
+define laofuren = Character("老妇人",color="#F5F5F5")
+define axuan = Character("阿宣",color="#FF0000")
+define dudou = Character("肚兜",color="#FFFF00")
+define chunming = Character("村民",color="#E3CF57")
 
 label bai_first_section:
 
@@ -273,8 +273,8 @@ label bai_second_section:
                 axuan"宝青，宝青？啊！我知道了，在永州城外的小树林有一个小作坊，名叫“宝青坊”，你这珠钗肯定是那做的，我们一问便知。"
                 "你也想弄清楚这个法器的来历，于是你们便踏上了新的旅途。"
                 jump bai_third_section
-define nansheyao = Character("男蛇妖")
-define boss = Character("老板娘")
+define nansheyao = Character("男蛇妖",color="#802A2A")
+define boss = Character("老板娘",color="#8A2BE2")
 label bai_third_section:
     "永州城附近，重峦叠嶂，碧水潺潺。你们二人正乘着小船前往永州。"
     axuan"离永州已经不远了，还在想自己的来历？想不起自己的来历，是挺头疼的。"
