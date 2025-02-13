@@ -2,24 +2,14 @@
 
 # 声明此游戏使用的角色。颜色参数可使角色姓名着色。
 
-define me = Character("我")
+define me = Character("我",color="blue")
 define xiaoqing = Character("小青")
 # 游戏在此开始。
 
 
 label start:
 
-    # 显示一个背景。此处默认显示占位图，但您也可以在图片目录添加一个文件
-    # （命名为 bg room.png 或 bg room.jpg）来显示。
 
-    scene bg room
-
-    # 显示角色立绘。此处使用了占位图，但您也可以在图片目录添加命名为
-    # eileen happy.png 的文件来将其替换掉。
-
-    show eileen happy
-
-    # 此处显示各行对话。
     "2025年1月20日晚，你正在和家人坐在一起看春晚"
     
     "此时电视里正在播放这小品《借伞》，喜欢白蛇传故事的你看的津津有味。"
