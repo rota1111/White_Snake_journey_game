@@ -1,8 +1,14 @@
 # White_Snake_journey_game
-test/ 为测试  
-test-bin/ 为test生成的发行版,zip里有exe  
-white snake journey/ 为游戏正式目录
-在game/目录下结构为:
+## 项目结构
+```
+.
+├── README.md
+├── test                    测试
+├── test-bin                test生成的发行版
+├── white snake journey     游戏正式目录 
+└── 《白蛇之旅》——小游戏设计策划案.docx   
+```
+其中在white snake journey/game/目录下结构为:
 ```
 .
 ├── SourceHanSansLite.ttf
