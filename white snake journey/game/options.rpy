@@ -16,7 +16,7 @@ define config.name = _("white snake journey")
 
 ## 决定上面给出的标题是否显示在标题界面屏幕。设置为 False 来隐藏标题。
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## 游戏版本号。
