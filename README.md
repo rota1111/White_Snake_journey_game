@@ -1,1 +1,3 @@
 # White_Snake_journey_game
+test目录为测试
+test-bin为生成的发行版，zip里有exe
