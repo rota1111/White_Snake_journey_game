@@ -99,7 +99,7 @@ label start:
         label tell_her:
             xiaoqing "是啊，每次突破都很险，至于你的困惑，你握住这只珠钗，它会告诉你一切。"
             
-            jump first_section
+            jump bai_first_section
         label not_tell_her:
             xiaoqing "姐姐，你每次突破都这么冒险，看你的样子一定很困惑，你握住这只珠钗，它会告诉你一切。"
 
