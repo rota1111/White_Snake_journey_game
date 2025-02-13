@@ -21,5 +21,5 @@
 ├── saves/                  
 ├── screens.rpy             界面定义
 ├── script.rpy              剧情脚本
-└── tl/     翻译文件
+└── tl/                     翻译文件
 ```
