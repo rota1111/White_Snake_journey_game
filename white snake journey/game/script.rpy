@@ -9,7 +9,6 @@ define xiaoqing = Character("小青",color="#00FFFF")
 
 label start:
 
-
     "2025年1月20日晚，你正在和家人坐在一起看春晚"
     
     "此时电视里正在播放这小品《借伞》，喜欢白蛇传故事的你看的津津有味。"
