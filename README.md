@@ -24,4 +24,4 @@
 └── tl/                     翻译文件
 ```
 ## 游玩方式
-解压whitesnakejourney-*-dists下的压缩包，点击exe即可游玩。
+点击右侧realse下载发行版本,解压点击exe版本游玩
