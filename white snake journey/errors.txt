@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 67: expected menuitem
-    label save_people:
-    ^
+File "game/script.rpy", line 368: choice menuitem expects a non-empty block.
+    "挡在阿宣身前。":
+              ^
+
+File "game/script.rpy", line 407: choice menuitem expects a non-empty block.
+    "同意跟小青回去。":
+               ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Feb 13 20:45:04 2025
+Fri Feb 14 09:45:21 2025
