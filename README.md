@@ -1,7 +1,6 @@
 # White_Snake_journey_game
 ## 项目结构
 ```
-root@Rota-pc:/mnt/d/Desktop/white snake journey# tree -L 2
 .
 ├── README.md
 ├── errors.txt                  错误日志
