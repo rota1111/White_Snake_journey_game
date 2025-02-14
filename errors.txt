@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 368: choice menuitem expects a non-empty block.
-    "挡在阿宣身前。":
-              ^
-
-File "game/script.rpy", line 407: choice menuitem expects a non-empty block.
-    "同意跟小青回去。":
-               ^
+File "game/script.rpy", line 507: expected statement.
+    "小青来到了师傅面前，准备为小白的背叛开脱。"\
+                           ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb 14 09:45:21 2025
+Fri Feb 14 20:15:24 2025
