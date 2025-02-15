@@ -9,7 +9,7 @@ import random
 import time
 from pygame.locals import *
 from random import randint, choice
-import fun_little_game.迷宫.mapp as mapp
+import mapp
 import color
 
 # 设置屏幕宽度和高度为全局变量
@@ -39,7 +39,6 @@ if __name__ == '__main__':
     # 初始化 Pygame
     pygame.init()
     screen = pygame.display.set_mode([screen_width, screen_height])
-    pygame.display.set_caption('Maze_AI——by Wonz')
     global font1, font2, font3
 
     clock = pygame.time.Clock()
