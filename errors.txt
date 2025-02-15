@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 507: expected statement.
-    "小青来到了师傅面前，准备为小白的背叛开脱。"\
-                           ^
+File "game/xu_second_section.rpy", line 100: expected ':' not found.
+    menu label xu_second_five:
+               ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb 14 20:15:24 2025
+Sat Feb 15 14:06:02 2025
