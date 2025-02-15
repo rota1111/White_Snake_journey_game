@@ -15,7 +15,8 @@
 │   ├── options.rpy             配置和构筑相关变量
 │   ├── saves
 │   ├── screens.rpy             界面定义
-│   ├── script.rpy              剧情脚本
+│   ├── script.rpy              开始章节剧情脚本
+│   ├── xu_or_bai_*_section.rpy 不同章节剧情脚本
 │   └── tl/                     翻译文件
 ├── log.txt                     日志记录
 ├── project.json
