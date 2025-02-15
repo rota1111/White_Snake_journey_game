@@ -35,4 +35,4 @@ label xu_fifth_section:
     "可是此时你的身躯已经冰冷，你的灵魂飘荡在空中不断消散，看着这一切却无法做出什么。"
     "小白急中生智，用玉钗对抗吸力，成功等到了破阵的那一刻，你的肉身虽然已毁，但是你成功保住了你的魂魄，让你得以转世投胎。"
     
-    jump xu_sixth_section
+    jump xu_final_section
