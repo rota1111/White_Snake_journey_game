@@ -17,6 +17,13 @@ define guo_shi_di_zi = Character("国师弟子",color = "#9932CC")
 define guoshi = Character("国师",color = "#9932CC")
 define shifu = Character("师傅",color = "#FFC0CB")
 define young_man = Character("年轻人",color = "#FF0000")
+define daoshi = Character("道士", color = "#603d30")
+define baixing = Character("百姓", color = "#eea08c")
+define cunmingjia = Character("村民甲", color = "#bdaead")
+define cunmingyi = Character("村民乙", color = "#ed4845")
+define da_shen = Character("大婶", color="#f2b9b2")
+define xiaren = Character("下人","#f33b1f")
+define cunmingbing = Character("村民丙", color = "#bdaeaf")
 # 游戏在此开始。
 
 
