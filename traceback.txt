@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 25, in script
+    define xiaren = Character("下人","#f33b1f")
+  File "game/script.rpy", line 25, in <module>
+    define xiaren = Character("下人","#f33b1f")
+TypeError: 'kind' is an invalid keyword argument for str()
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 25, in script
+    define xiaren = Character("下人","#f33b1f")
+  File "/home/rota/桌面/renpy-8.3.4-sdk/renpy/ast.py", line 2241, in execute
+    self.set()
+  File "/home/rota/桌面/renpy-8.3.4-sdk/renpy/ast.py", line 2255, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/home/rota/桌面/renpy-8.3.4-sdk/renpy/python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 25, in <module>
+    define xiaren = Character("下人","#f33b1f")
+  File "/home/rota/桌面/renpy-8.3.4-sdk/renpy/character.py", line 1778, in Character
+    return type(kind)(name, kind=kind, **properties)
+TypeError: 'kind' is an invalid keyword argument for str()
+
+Linux-6.13.2-arch1-1-x86_64-with-glibc2.41 x86_64
+Ren'Py 8.3.4.24120703
+white snake journey 1.2.2
+Sat Feb 15 19:59:37 2025
