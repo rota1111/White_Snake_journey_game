@@ -47,7 +47,7 @@ if __name__ == '__main__':
 
 
     # 加载角色照片
-    user = pygame.image.load("user.png").convert_alpha()
+    user = pygame.image.load("fun_little_game/迷宫/user.png").convert_alpha()
     width, height = user.get_size()
     user = pygame.transform.smoothscale(user, (8, 8))
     # draw the user
@@ -73,6 +73,8 @@ if __name__ == '__main__':
             elif (r_list[j][i] == 0):
                 pygame.draw.rect(screen, color.White, [25 + i * room_size, 25 + j * room_size, 10, 10], 1)
                 pygame.display.flip()
+            else:
+                print(j,i)
 
 
     while True:

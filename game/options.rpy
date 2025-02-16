@@ -11,17 +11,17 @@
 ##
 ## 带有 _() 的字符串表示其可被翻译。
 
-define config.name = _("white snake journey")
+define config.name = _("白蛇之旅")
 
 
 ## 决定上面给出的标题是否显示在标题界面屏幕。设置为 False 来隐藏标题。
 
-define gui.show_name = False
+define gui.show_name = True
 
 
 ## 游戏版本号。
 
-define config.version = "1.2.2"
+define config.version = "1.3"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
@@ -139,7 +139,7 @@ define config.save_directory = "whitesnakejourney-1739438984"
 ##
 ## 在任务栏或 Dock 上显示的图标。
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "images/icon.png"
 
 
 ## 构建配置 ########################################################################
