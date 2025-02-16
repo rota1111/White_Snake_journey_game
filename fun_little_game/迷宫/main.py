@@ -14,10 +14,10 @@ import color
 
 # 设置屏幕宽度和高度为全局变量
 global screen_width
-screen_width = 800
+screen_width = 900
 global screen_height
-screen_height = 800
-room_size = 15 # 每个房间的大小
+screen_height = 900
+room_size = 20 # 每个房间的大小
 steps = 0
 
 
@@ -41,15 +41,16 @@ if __name__ == '__main__':
     screen = pygame.display.set_mode([screen_width, screen_height])
     global font1, font2, font3
 
+    pygame.display.set_caption("逃出地宫！！")
     clock = pygame.time.Clock()
-    fps = 20
+    fps = 30
     screen.fill(color.White)
 
 
     # 加载角色照片
-    user = pygame.image.load("fun_little_game/迷宫/user.png").convert_alpha()
+    user = pygame.image.load("fun_little_game/迷宫/heart.jpg").convert_alpha()
     width, height = user.get_size()
-    user = pygame.transform.smoothscale(user, (8, 8))
+    user = pygame.transform.smoothscale(user, (20, 20))
     # draw the user
     width, height = user.get_size()
     x = 25 + 42 * room_size
@@ -58,25 +59,23 @@ if __name__ == '__main__':
     roomy = 9
     screen.blit(user, (x, y))
 
-
+    stone = pygame.image.load("fun_little_game/迷宫/stone.jpg").convert_alpha()
+    stone = pygame.transform.smoothscale(stone, (20, 20))
     # 画迷宫
     for i in range(43):
         for j in range(42):
             if (r_list[j][i] == 3):
-                pygame.draw.circle(screen, color.Red, [30 + i * room_size, 30 + j * room_size], 5, 0)
+                font3 = pygame.font.Font('game/SourceHanSansLite.ttf', 22)
+                print_text(font3, 15 + i * room_size, 22 + j * room_size, "生门", color.Gray)
                 pygame.display.flip()
                 r_list[j][i] = 0
             elif (r_list[j][i] == 1):
                 # 画10*10的矩形，线宽为1，这里不能是0，因为10*10无空白区域
-                pygame.draw.rect(screen, color.Black, [25 + i * room_size, 25 + j * room_size, 10, 10], 0)
-                pygame.display.flip()
+                screen.blit(stone, (25 + i * room_size,25 + j * room_size ))
+                pygame.display.flip()           
             elif (r_list[j][i] == 0):
-                pygame.draw.rect(screen, color.White, [25 + i * room_size, 25 + j * room_size, 10, 10], 1)
+                pygame.draw.rect(screen, color.White, [25 + i * room_size, 25 + j * room_size, 20, 20], 1)
                 pygame.display.flip()
-            else:
-                print(j,i)
-
-
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -92,21 +91,17 @@ if __name__ == '__main__':
                     if(0 <= roomx < 42 and 0 <= roomy <= 41 and r_list[roomy][roomx+1] == 0):
                         x += room_size
                         roomx += 1 # 计房间数
-                        steps += 1 # 计步
                         font1 = pygame.font.Font(None, 32)
                         screen.fill(color.White, (25, 0, 200, 25)) # x:25 y:0 width:200 height:25
                         screen.fill(color.White, (300, 0, 200, 25))  # x:300 y:0 width:200 height:25
-                        print_text(font1, 25, 0, "Steps:" + str(steps), color.Black)
                         pygame.display.flip()
-                        screen.fill(color.White, (x-room_size, y, 10, 10))
+                        screen.fill(color.White, (x-room_size, y, 20, 20))
                         screen.blit(user, (x, y))
                     # 右边有墙
                     elif (0 <= roomx < 42 and 0 <= roomy <= 41 and r_list[roomy][roomx+1] == 1):
-                        steps += 1
                         font1 = pygame.font.Font(None, 32)
                         font2 = pygame.font.Font(None, 32)
                         screen.fill(color.White, (25, 0, 200, 25))
-                        print_text(font1, 25, 0, "Steps:" + str(steps), color.Black)
                         print_text(font2, 350, 0, "This is a wall!", color.Black)
                         pygame.display.flip()
                         screen.blit(user, (x, y))
@@ -116,21 +111,17 @@ if __name__ == '__main__':
                     if (0 < roomx <= 42 and 0 <= roomy <= 41 and r_list[roomy][roomx-1] == 0):
                         x -= room_size
                         roomx -= 1
-                        steps += 1
                         font1 = pygame.font.Font(None, 32)
                         screen.fill(color.White, (25, 0, 200, 25))
                         screen.fill(color.White, (300, 0, 200, 25))  # x:300 y:0 width:200 height:25
-                        print_text(font1, 25, 0, "Steps:" + str(steps), color.Black)
                         pygame.display.flip()
-                        screen.fill(color.White, (x+room_size, y, 10, 10))
+                        screen.fill(color.White, (x+room_size, y, 20, 20))
                         screen.blit(user, (x, y))
                     # 左边有墙
                     elif (0 < roomx <= 42 and 0 <= roomy <= 41 and r_list[roomy][roomx-1] == 1):
-                        steps += 1
                         font1 = pygame.font.Font(None, 32)
                         font2 = pygame.font.Font(None, 32)
                         screen.fill(color.White, (25, 0, 200, 25))
-                        print_text(font1, 25, 0, "Steps:" + str(steps), color.Black)
                         print_text(font2, 350, 0, "This is a wall!", color.Black)
                         pygame.display.flip()
                         screen.blit(user, (x, y))
@@ -144,17 +135,14 @@ if __name__ == '__main__':
                         font1 = pygame.font.Font(None, 32)
                         screen.fill(color.White, (25, 0, 200, 25))
                         screen.fill(color.White, (300, 0, 200, 25))  # x:300 y:0 width:200 height:25
-                        print_text(font1, 25, 0, "Steps:" + str(steps), color.Black)
                         pygame.display.flip()
-                        screen.fill(color.White, (x, y+room_size, 10, 10))
+                        screen.fill(color.White, (x, y+room_size, 20, 20))
                         screen.blit(user, (x, y))
                     # 上边有墙
                     elif (0 <= roomx <= 42 and 0 < roomy <= 41 and r_list[roomy-1][roomx] == 1):
-                        steps += 1
                         font1 = pygame.font.Font(None, 32)
                         font2 = pygame.font.Font(None, 32)
                         screen.fill(color.White, (25, 0, 200, 25))
-                        print_text(font1, 25, 0, "Steps:" + str(steps), color.Black)
                         print_text(font2, 350, 0, "This is a wall!", color.Black)
                         pygame.display.flip()
                         screen.blit(user, (x, y))
@@ -164,21 +152,17 @@ if __name__ == '__main__':
                     if (0 <= roomx <= 42 and 0 <= roomy < 41 and r_list[roomy+1][roomx] == 0):
                         y += room_size
                         roomy += 1
-                        steps += 1
                         font1 = pygame.font.Font(None, 32)
                         screen.fill(color.White, (25, 0, 200, 25))
                         screen.fill(color.White, (300, 0, 200, 25))  # x:300 y:0 width:200 height:25
-                        print_text(font1, 25, 0, "Steps:" + str(steps), color.Black)
                         pygame.display.flip()
-                        screen.fill(color.White, (x, y-room_size, 10, 10))
+                        screen.fill(color.White, (x, y-room_size, 20, 20))
                         screen.blit(user, (x, y))
                     # 下边无墙
                     elif (0 <= roomx <= 42 and 0 <= roomy < 41 and r_list[roomy+1][roomx] == 1):
-                        steps += 1
                         font1 = pygame.font.Font(None, 32)
                         font2 = pygame.font.Font(None, 32)
                         screen.fill(color.White, (25, 0, 200, 25))
-                        print_text(font1, 25, 0, "Steps:" + str(steps), color.Black)
                         print_text(font2, 350, 0, "This is a wall!", color.Black)
                         pygame.display.flip()
                         screen.blit(user, (x, y))
