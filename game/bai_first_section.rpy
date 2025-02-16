@@ -28,7 +28,7 @@ label bai_first_section:
         
         dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
         
-        chunming "阿宣你又没捕到蛇，光采草药也抵不了税啊。"
+        cunmin "阿宣你又没捕到蛇，光采草药也抵不了税啊。"
         
         axuan"抵不了税，救人也好啊。"
         
