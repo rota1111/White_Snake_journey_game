@@ -1,4 +1,5 @@
 label xu_second_section:
+    scene bg 6
     "永州城附近，重峦叠嶂，碧水潺潺。你们二人正乘着小船前往永州。"
     axuan "离永州已经不远了，还在想自己的来历？想不起自己的来历，是挺头疼的。"
     axuan "不过呢，很多事记得不如忘了好。人生无常，苦多乐少。既然如此，多记住些美好的时候就好了。"
@@ -15,6 +16,7 @@ label xu_second_section:
             hide xiaobai
             jump xu_second_one
     label xu_second_one:
+        scene bg 7
         "突然，天色转暗，风气浪涌，水流湍急。在你们面前有一叶小舟，挡在你们的必经之路上。正当你们靠近时，小舟上的船夫突然现出蛇妖的原形，身形巨大无比，毒牙寒光凌凌，向你们扑来。"
         show nansheyao with dissolve
         nansheyao "你果然和人在一起，我取你性命。"
@@ -37,6 +39,7 @@ label xu_second_section:
         "你看到昏倒的小白，决定将她带到附近的寺庙中修养。"
         hide xiaobai with dissolve
 
+    scene bg 8
     "你背着她来到了这座废弃的寺庙，你发现她的身体越来越冷，面色通红。"
     menu label_xu_second_three:
         "升起火堆。":
@@ -72,7 +75,9 @@ label xu_second_section:
             axuan "是就是呗，人间多的是长了两只脚的恶人，长了条尾巴又怎么样，你不是恶人，就算是妖，你也是个好妖。"
             jump xu_second_three
     label xu_second_three:
+        "你看到小白的眼中露出了不一样的神采，看你的眼神又温柔了几分。"
         hide xiaobai with dissolve
+        scene bg 9
         "你们继续踏上了前往宝青坊的旅程，经过一番寻找，你们终于来到了宝青坊门前。"
         show boss with dissolve
         "刚进门，便看见了宝青坊的老板娘迎了过来，只见她只见她身姿婀娜，面容姣好，却带着一丝神秘莫测的气息。她穿着一袭青色长裙，裙摆上绣着精致的花纹，随着她的动作轻轻摇曳。"
@@ -114,6 +119,7 @@ label xu_second_section:
             hide xiaobai
             jump xu_second_four
     label xu_second_four:
+        scene bg 10
         "你与阿宣走出了宝青坊，没过多久，迎面走来一个身披斗篷的黑衣人。"
         show black_man
         black_man "捕蛇人？"

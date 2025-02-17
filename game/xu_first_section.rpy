@@ -1,6 +1,7 @@
 
 
 label xu_first_section:
+    scene bg 3
     "距离你救下那位陌生的白衣女子已经过去了三天，她还迟迟未醒，你像往常一样带着一筐草药满载而归。"
     
     show dudou at left
@@ -29,6 +30,7 @@ label xu_first_section:
         axuan "没事的，明天我带你去找到你的地方，没准有什么线索。"
         "只见那姑娘只是点点头，答应了你的建议。"
 
+        scene bg 4
         show xiaobai with dissolve
         "转眼间又是一天过去了，你们俩走在路上。"
         
@@ -40,6 +42,7 @@ label xu_first_section:
         axuan "谁知道呢，也许是吃了或者做成了药材？"
         hide xiaobai with dissolve
 
+    scene bg 5
     "走着走着，看到眼前陡峭的山路，你犯了难，不知道怎么带她上去，如果只有你自己，自然可以很容易的爬上去，因为你走了这条路无数次了。"
     show dudou 
     "就在这时，肚兜不知何时跳上了一处陡崖，正要回到你身旁，没想到脚下一滑，掉了下去。"
@@ -86,7 +89,9 @@ label xu_first_section:
             hide xiaobai with dissolve
 
             "小白不语，没有理会你的马屁。但是你终于知道了这位姑娘的身份。"
+            show yuchai
             "你和小白在田野间散步，突然在一处悬崖边看到了一支玉钗，只见小白再三检查，仍旧没有看出什么特别的，只是发现钗子上印着小小的两个字“宝青”，她不知道这是宝物的名字，还是别的标识，正在她一头雾水之时，你看出来你的疑惑，主动解释道。"
+            hide yuchai with dissolve
             axuan "宝青，宝青？啊！我知道了，在永州城外的小树林有一个小作坊，名叫“宝青坊”，你这珠钗肯定是那做的，我们一问便知。"
             "你也想弄清楚这个法器的来历，于是你们便踏上了新的旅途。"
             jump xu_second_section

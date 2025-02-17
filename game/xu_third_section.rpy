@@ -1,4 +1,5 @@
 label xu_third_section:
+    scene bg 11
     "你和小白小心翼翼地踏入了地宫深处，四周昏暗，只有墙壁上的火把发出微弱的光芒。"
     axuan "跟我来，小白，我们得小心，这里可能有未知的危险。"
     show xiaobai
@@ -7,11 +8,13 @@ label xu_third_section:
     axuan "真没想到，这地宫底下，还有这么一条密道，我们得想办法出去。"
     xiaobai "我们从这里走，看看能不能找到出路。"
     "你们走进了密道，发现了一个复杂的机关阵列。"
+    scene bg 12
     axuan "朱雀在顶，玄武入宫，宫为内卦，门为外卦，八门……这边是生门，我们走这边。"
     axuan "经过一番寻找，你们找到了生门，继续前进。"
     xiaobai "这是什么地方？"
     axuan "看来是藏在地下的一个镇妖法阵，不过对人无害。"
     "你们继续探索，发现了一个古老的道家机关。"
+    scene bg 13
     axuan "这地底下怎么会有一个道家机关呢？想必原来是一个道观，荒废了，后来又在上面建了一座塔。"
     xiaobai "没事，这个阵势有迹可循，我们一定能出去。"
     hide xiaobai with dissolve
@@ -27,10 +30,9 @@ label xu_third_section:
     axuan "天天诛妖除魔，逼我们捕蛇。天下已经乱成这样了，只看到越诛妖除魔，天下越乱。"
     axuan "小白，无论怎样有我在。"
     hide xiaobai with dissolve
-    show xiaoqing with dissolve
+    scene bg 14
     "由于你复原了石板，地宫的出口也打开了，你和小白走了出去，看到了等在一旁的小青，只见她脸上的愤怒已然消失不见，想必是冷静了下来。"
     "值得一提的是，肚兜作为“人质”，被小青踩在了脚下，看见你们出来，她向小白露出期待的目光。"
-    hide xiaoqing
     show xiaobai
     xiaobai "小青，我想通了，我跟你走。"
     xiaobai "阿宣，我们就分开吧。"

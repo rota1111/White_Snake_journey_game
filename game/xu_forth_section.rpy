@@ -1,4 +1,5 @@
 label xu_forth_section:
+    scene bg 9
     "（宝青坊内）"
     show boss with dissolve
     axuan "老板娘，我想变成妖怪，这样就能跟小白在一起了，你可以帮我吗。"
@@ -31,6 +32,7 @@ label xu_forth_section:
     "话音未落，你眼前一黑，失去了知觉。"
     hide boss with dissolve
     show dudou with dissolve
+    scene bg 15
     dudou "汪汪！"
     "你被肚兜舔醒了，刚回过神，你连忙朝下看去，身上并未缺少什么零件，你终于放下了紧张的心。"
     axuan "还好还在。"
@@ -39,6 +41,7 @@ label xu_forth_section:
     hide dudou with dissolve
     "你回过神来才发现，原来老板娘将肚兜的尾巴嫁接到了你的身上，你成为了一只狗妖。"
     "喜上眉梢的你跑了起来，这才发现自己似乎有用不完的力气，健步如飞，连忙赶回那处旧寺庙寻找小白。"
+    scene bg 16
     "只见此处已经成为了一片废墟，到处都是残垣断壁，火光四起。你担心小白被压在了废墟之下。"
 
     menu:
@@ -53,6 +56,7 @@ label xu_forth_section:
             jump xu_forth_two
 
     label xu_forth_two:
+        scene bg 17
         "这时你看到不远处的永州城也是火光四起，浓烟飘荡。在寺庙中寻找无果的你决定去城内寻找。"
         baixing "妖怪来了，快逃命啊！"
         axuan "小白！小白！"
@@ -67,6 +71,7 @@ label xu_forth_section:
         xiaoqing "小子，你还不知道吧，国师已经到了你们蛇村。姐姐要去找他算账呢，那个蛇村眼看就要有灭顶之灾了。"
         hide xiaoqing with dissolve
         "听到这里，你意识到大事不好，连忙返回村子，通知村民，当然为了隐藏身份，你特意将尾巴藏进了裤子。"
+        scene bg 3
         axuan "大家快走，我们村危险，一条巨蟒马上就要来了，赶紧走别管这村子了。"
         show cunminjia
         cunminjia "瞎说什么呀你，我们村围墙这么高，怕什么巨蟒。"
@@ -78,6 +83,8 @@ label xu_forth_section:
         da_shen "阿宣，你终于回来了。"
         axuan "大婶您赶紧离开，快。"
         da_shen "那我回去收拾收拾。"
+
+    scene bg 18
     xiaren "洞虚演道，太阴真君。"
     "只见村口一声喊叫，随之而来的是浩浩荡荡的朝廷军队，国师就在军队最前方的车架当中。"
     show guoshi
@@ -108,12 +115,12 @@ label xu_forth_section:
             axuan "她来了，快放开我，我能拦住她。"
             guoshi "也罢，你去吧。"
             hide guoshi with dissolve
-    
+    scene bg 19
     "你来到了捕蛇村附近的峡谷，将小白和小青拦了下来。"
     axuan "小白，如果你与国师开战的话，村子就会毁了，不知有多少村民会家破人亡，收手吧。"
     axuan "小白，你听我说，我把自己变成妖了，我们俩都是妖了。"
     axuan "你身形巨大，那又怎么样？天地这么大，容下多少山川湖海。我虽然是个最弱最小的妖，但我会拼尽全力去保护你。如果世间容不下我们，我们就一起去这天地的尽头，八荒四海，总有个容身之所。"
-
+    scene bg 20
     "正当她犹豫不决之际，异变突生，天空中突然升起一道半球形的壁垒，将你们三人困在了里面，黑色的大手从天而降，将你们三个牢牢压在了地上。"
     jump xu_fifth_section
 

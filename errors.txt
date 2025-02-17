@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/xu_second_section.rpy", line 110: expected statement.
-    hdie boss
-             ^
+File "game/xu_first_section.rpy", line 92: end of line expected.
+    show yuchai.png
+               ^
+
+File "game/xu_first_section.rpy", line 94: end of line expected.
+    hide yuchai.png with dissolve
+               ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Feb 17 13:54:11 2025
+Mon Feb 17 14:47:17 2025

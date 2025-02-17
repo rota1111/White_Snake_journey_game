@@ -29,6 +29,7 @@ define cunminbing = Character("村民丙", color = "#bdaeaf")
 
 label start:
 
+    scene bg 1 with dissolve
     "2025年1月28日晚，你正在和家人坐在一起看春晚"
     
     "此时电视里正在播放这小品《借伞》，喜欢白蛇传故事的你看的津津有味。"
@@ -41,12 +42,13 @@ label start:
             jump xuxian
         "白素贞":
             jump baisuzhen
-
     label xuxian:
+        scene bg 2 with dissolve
         "正当你沉浸于自己的幻想时，突然一道神秘的光芒闪过，你感到一阵眩晕，随后发现自己置身于一个陌生而古老的世界。"
         
         "与此同时，一段不属于你的记忆涌入了你的脑海："
 
+        scene bg 3
         show axuan with dissolve
         "许宣是一个在山野间自由自在的活泼少年，清俊洒脱且果敢有担当。他生活在晚唐时期的捕蛇村，这是一个因捕蛇可以抵税而兴起的村落。"
 
@@ -57,6 +59,7 @@ label start:
         hide axuan with dissolve
         "回过神来你这才发现，你化身成为了阿宣，穿越到了《白蛇》的故事之中，虽然有些猝不及防，但饱览穿越小说的你很快接受了这个设定，甚至还有些跃跃欲试。"
 
+        scene bg 4
         "此时你像往常一样，独自一人来到村外的水域采摘草药。突然，你听到一阵微弱的呻吟声，声音似乎是从水边传来的。"
 
         menu:
@@ -67,7 +70,7 @@ label start:
         label no_voice:
             "你发现靠近水边的地方草药更加茂盛，不知不觉中你耳边的声音更加清晰了，这下不得不看看发生了什么。"
         label voice:
-            show xiaobai
+            show xiaobai at right
             "来到了河边的一块大石头旁，你发现那是一个穿着白色衣裙的女子，她躺在岸边，昏迷不醒，身上还带着一些伤痕。"
 
             "看到这一幕，你有一些犹豫，决定："
@@ -77,11 +80,13 @@ label start:
                 "装作没看见，继续敬业的采草药":
                     jump not_save
             label save_people:
+                scene bg 4-1
                 "你将女子抱回了自己的小屋，将她放在床上，用被子轻轻盖住她。然后屋外的草丛中采来一些草药，熬成汤药，小心翼翼地喂给女子喝。不知她什么时候能醒啊，那么她到底是谁呢？"     
                 hide xiaobai with dissolve
                 jump xu_first_section
             label not_save:
                 hide xiaobai with dissolve
+                scene bg 4-2
                 "你没有理会这个陌生的白衣女子，而是继续专注于找草药，不知不觉中你走到了丛林深处，当你采完了最后一株草药时，你已分不清来时的路。"
 
                 "正当你一筹莫展之际，突然听到身后传来某种东西划过地面而发出的摩擦声，你以为遇到了村里的人，正要开心的问路，没想到一回头是一只人面蛇身的蛇妖，张着大嘴向你袭来，你来不及反应，眼前一黑失去了意识。"
@@ -92,6 +97,7 @@ label start:
                 jump if_save_people
 
     label baisuzhen:
+        scene bg 2 with dissolve
         "正当你沉浸于自己的幻想时，突然一道神秘的光芒闪过，你感到一阵眩晕，随后发现自己置身于一个陌生而古老的世界。"
         
         "与此同时，一段不属于你的记忆涌入了你的脑海："
