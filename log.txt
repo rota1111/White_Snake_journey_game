@@ -1,9 +1,9 @@
-2025-02-17 09:00:28 UTC
+2025-02-17 09:27:36 UTC
 Windows-10-10.0.22621
 Ren'Py 8.3.4.24120703
 
-Early init took 0.08s
-Loading error handling took 0.03s
+Early init took 0.07s
+Loading error handling took 0.61s
 Loading script took 0.13s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
@@ -12,14 +12,14 @@ Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
-Dump and make backups took 0.04s
+Dump and make backups took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.02s
+Initial gc took 0.03s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.19s
+Creating interface object took 0.21s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -30,15 +30,19 @@ Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.48s
+Interface start took 1.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Fullscreen mode.
+Windowed mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce RTX 3050 Ti Laptop GPU/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 566.07'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Screen sizes: virtual=(1920, 1080) physical=(1800, 1036) drawable=(1800, 1036)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1800, 1036) drawable=(1800, 1036)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1738, 975) drawable=(1738, 975)
 Maximum texture size: 4096x4096
