@@ -7,11 +7,13 @@ label xu_final_section:
             jump xu_final_one
         "拾起珠钗，物归原主。":
             young_man "姑娘，你的珠钗掉了。"
+            show xiaobai with dissolve
             xiaobai "谢谢官人。"
             young_man "这珠钗年代久远，可是宝贵之物"
             xiaobai "是啊，多谢小官人捡到。这可是万万不能丢失的。"
             young_man "小娘子看着好生面善，是何方之人。"
             xiaobai "说来话长..."
+            hide xiaobai with dissolve
             jump xu_final_one
     label xu_final_one:
     "故事到这就结束了，你再次感到一阵眩晕，随后发现自己回到了家里。电视之中正播放着下一个春晚节目，而你的思绪却仍停在白蛇的故事中，久久不能释怀。"

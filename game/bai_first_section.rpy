@@ -1,15 +1,20 @@
 label bai_first_section:
 
+
     "不知过了多久，你从床上坐了起来，沉思片刻，你发现自己失去了大部分的记忆。"
 
     xiaobai   "这是哪？我是谁？"
 
+    show laofuren
     laofuren "你醒了，这里是捕蛇村，你好像什么都想不起来了。"
-
+    
     laofuren "捕蛇队回来了！那天是阿宣救你回来的。"
+
+    hide laofuren with dissolve
 
     xiaobai   "阿宣？"
 
+    show axuan
     "你随着老妇人走出房间，遇到了刚刚归来的捕蛇队。一个少年向你走来。"
 
     axuan "你醒来了？"
@@ -22,48 +27,61 @@ label bai_first_section:
         "连忙问道：是你救了我？":
             jump not_nod_head
     label nod_head:
-        "他看到你只是点点头，便简单回应了一下，转身逗起了一直跟着他的小狗。"
+        "他看到你只是点点头，便简单回应了一下，转身逗起了一直跟着他的小狗。"        
 
         axuan"肚兜！"
         
+        show dudou at left
         dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
+        hide dudou
+        hide axuan
         
+        show cunmin
         cunmin "阿宣你又没捕到蛇，光采草药也抵不了税啊。"
-        
+        hide cunmin
+
+        show axuan
         axuan"抵不了税，救人也好啊。"
-        
+
         "你在旁边默默看着，原来阿宣是个善良的人啊。"
         
         "忽然，旁边堆着的竹筐吸引了你的注意，你发现每个竹筐里装的都是蛇，奇怪的是，你似乎能够听懂这些蛇的叫声，你突然头痛欲裂，连忙离开了这里。"
+        hide axuan
 
+        show laofuren
         laofuren"阿宣，这姑娘什么都不记得了。"
-        
-        axuan"没事的，明天我带你去找到你的地方，没准有什么线索。"
+        hide laofuren
 
+        show   axuan
+        axuan"没事的，明天我带你去找到你的地方，没准有什么线索。"
+        hide axuan with dissolve
         jump after_if_nod_head
 
     label not_nod_head:
+
         axuan"是呀，举手之劳罢了，敢问姑娘是谁，家住何方啊？"
         
         menu if_answer:
             "如实回答，我好像什么都不记得了":
                 
                 axuan"没事的，明天我带你去找到你的地方，没准有什么线索。"
-                
+                hide axuan with dissolve
                 jump after_if_nod_head
             "默不作声，静静站在那里。":
                 
                 axuan"不愿回答也没关系，那我就不打扰了，姑娘请便。"
                 
+                hide axuan with dissolve
                 "你已经醒来，不便继续住在陌生人家里，于是你离开了村子，但是你不熟悉路，最终迷失在了丛林中，缺水而死。"
 
                 "弥留之际，你的耳边传来了一道玄妙的声音，那是【生生不息的激荡】，忽然你发现自己回到了做出选择的前一刻。"
-
+                show axuan
                 jump if_answer
 
     label after_if_nod_head:
         "转眼间又是一天过去了，你们俩走在路上。"
-
+        
+        show axuan
         axuan"下面就是我们捕蛇的地方。"
 
         "他指了指面前的瀑布下。"
@@ -74,14 +92,16 @@ label bai_first_section:
 
         "看到眼前陡峭的山路，阿宣犯了难，不知道怎么带你上去，如果只有他自己，自然可以很容易的爬上去，因为他走了这条路无数次了。"
 
+        show dudou at left
         "肚兜不知何时跳上了一处陡崖，正要回到阿宣身旁，没想到脚下一滑，掉了下去。"
-
+        hide dudou with moveoutbottom
         "你决定"
 
         menu:
             "原地不动":
-                "你没有理会眼前紧急的一幕，但是阿宣顾不上这么多，为了救自己的爱犬，也莽撞的跟着跳下了悬崖。看到自己的救命恩人也遇到了危险，你这才有些动容"
 
+                "你没有理会眼前紧急的一幕，但是阿宣顾不上这么多，为了救自己的爱犬，也莽撞的跟着跳下了悬崖。看到自己的救命恩人也遇到了危险，你这才有些动容"
+                hide axuan with moveoutbottom
                 "你决定"
 
                 menu after_dorong_choice:
@@ -90,23 +110,31 @@ label bai_first_section:
 
                         jump after_dorong_choice
                     "跳崖救人":
+                        
                         "你正要跳崖救人，手指顺势朝向阿宣的方向，没想到，你的手中窜出一道法力，拖住了他，将他救了回来。不远处的肚兜也被你顺手施救。"
+                        show axuan with moveouttop
+                        show dudou with moveouttop 
                         jump after_save_dog
                     "伸手援助":
                         "你正要跳崖救人，手指顺势朝向阿宣的方向，没想到，你的手中窜出一道法力，拖住了他，将他救了回来。不远处的肚兜也被你顺手施救。"
+                        show axuan with moveouttop
                         jump after_save_dog
             "跳崖救犬":
                 "你正想要跳崖救犬，手指顺势朝向肚兜的方向，没想到，你的手中窜出一道法力，拖住了肚兜，将它救了回来。"
+                show dudou with moveouttop
                 jump after_save_dog
             "伸手援助":
                 "你正想要伸手帮忙，没想到，你的手中窜出一道法力，拖住了肚兜，将它救了回来。"
+                show dudou with moveouttop
                 jump after_save_dog
         label after_save_dog:
             "逃过一劫的肚兜脸上露出了胆怯的表情，身体颤抖着躲在阿宣脚边，尾巴无精打采的垂到了地上。"
+            hide dudou with dissolve
             axuan"你会法术？"
             "你突然记起，自己会法术，心里便有了底"
             xiaobai  "我自己先上去，你们慢慢上来吧。"
             "说完，你身轻如燕，跳上了山崖。"
+            hide axuan with moveoutbottom
             "山顶的秀丽景色让你十分沉醉。你来到了你醒来的地方，突然一段记忆涌入你的脑海。"
             "终于，你想起了你是谁。思绪跟随记忆回到了之前。"
             jump bai_second_section
