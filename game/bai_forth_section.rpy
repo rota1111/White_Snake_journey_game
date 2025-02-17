@@ -1,4 +1,5 @@
 label bai_forth_section:
+    scene bg 11
     "你和阿宣小心翼翼地踏入了地宫深处，四周昏暗，只有墙壁上的火把发出微弱的光芒。"
     show axuan
     axuan "跟我来，小白，我们得小心，这里可能有未知的危险。"
@@ -7,9 +8,11 @@ label bai_forth_section:
     axuan "真没想到，这地宫底下，还有这么一条密道，我们得想办法出去。"
     xiaobai "我们从这里走，看看能不能找到出路。"
     "你们走进了密道，发现了一个复杂的机关阵列。"
+    scene bg 12
     axuan "朱雀在顶，玄武入宫，宫为内卦，门为外卦，八门……这边是生门，我们走这边。经过一番寻找，你们找到了生门，继续前进。"
     xiaobai "这是什么地方？"
     axuan "看来是藏在地下的一个镇妖法阵，不过对人无害。"
+    scene bg 13
     "你们继续探索，发现了一个古老的道家机关。"
     axuan "这地底下怎么会有一个道家机关呢？想必原来是一个道观，荒废了，后来又在上面建了一座塔。"
     xiaobai "没事，这个阵势有迹可循，我们一定能出去。"
@@ -25,18 +28,16 @@ label bai_forth_section:
     show axuan
     axuan "天天诛妖除魔，逼我们捕蛇。天下已经乱成这样了，只看到越诛妖除魔，天下越乱。小白，无论怎样有我在。"
     hide axuan with dissolve
+    scene bg 14
     "由于你复原了石板，地宫的出口也打开了，你和阿宣走了出去，看到了等在一旁的小青，只见她脸上的愤怒已然消失不见，想必是冷静了下来。"
-    show xiaoqing
-    show dudou at left
     "值得一提的是，肚兜作为“人质”，被小青踩在了脚下，看见你们出来，她向你露出期待的目光。"
-    hide dudou
+
     menu:
         "拒绝跟小青回去。":
             "你没有和小青对视，而是躲着她，阿宣趁机将肚兜抢了回来，小青也没有再和你纠缠，她清楚这是你的选择。"
             "就在这时，异变突生，小青身上出现了异常的红光，她整个人跪了下去，发出痛苦的哀嚎，这下，你不得不前去关心小青的情况。"
             xiaobai "小青，你怎么了？"
             xiaoqing "（痛苦地）……别碰我！是烈阳断魂鳞……我答应了师父，三日之内带你回洞，否则……断魂鳞发……肌肤寸断而死。"
-            hide xiaoqing
             show axuan
             axuan "小白，这是怎么回事？什么是烈阳断魂鳞？"
             hide axuan
@@ -47,7 +48,6 @@ label bai_forth_section:
             hide xiaoqing with dissolve
             jump after_back_with_xiaoqing
         "同意跟小青回去。":
-            hide xiaoqing with dissolve
             jump after_back_with_xiaoqing
     label after_back_with_xiaoqing:
         xiaobai "小青，我想通了，我跟你走。"

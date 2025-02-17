@@ -3,6 +3,8 @@ label bai_sixth_section:
     show guoshi
     guoshi "竟然是这么一条巨蟒，多亏了你这个小妖怪，才能预先布下这个困妖阵。你们就等着形神俱灭吧。"
     hide guoshi
+    
+    scene bg 21
     "能看到天空之中出现了一道漩涡，不断有奇异的光从你们三人身上散出，被吸走。"
     show axuan
     axuan "这是什么。"
@@ -62,8 +64,10 @@ label bai_sixth_section:
     show axuan
     "弥留之际，你看到有人在破阵，你高兴的看向身旁的阿宣。"
     xiaobai "阿宣，你听外面有人在破阵。"
-    "可是此时阿宣的身躯已经冰冷，你和他的记忆随着魂魄显现在空中，不断被漩涡吸走。"
     hide axuan with dissolve
+    scene bg 22
+    "可是此时阿宣的身躯已经冰冷，你和他的记忆随着魂魄显现在空中，不断被漩涡吸走。"
+    
     
     menu bai_sixth_two:
         "静静等待死亡。":
