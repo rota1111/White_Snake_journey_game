@@ -1,7 +1,9 @@
 label bai_second_section:
+    scene bg 26
     "晚唐末年，天下将乱。妖魔鬼怪，出没人间。皇帝沉迷于求仙，国师太阴真君屡试未果，皇帝震怒。国师逼迫百姓捕蛇，修炼道法以重得皇帝宠幸。"
     "作为蛇妖，你被师傅派出刺杀国师，为族人报仇。"
     "此刻，你正在国师乘坐的渡船上，伪装成侍卫，伺机刺杀国师。"
+    scene bg 27
     "来到了国师所在的房间外，你看到了屋内传来的紫光，同时听到了耳边传来的咒语声。"
     "你决定"
 
@@ -19,26 +21,27 @@ label bai_second_section:
             hide guoshi with dissolve
             jump cisha_guoshi
     label after_cisha_guoshi:
+        scene bg 4
         "有了以上的记忆你渐渐想起了自己的身份以及刺杀国师的原因，你想起是你的师傅派你去舍命刺杀国师，她并没有考虑到你修为尚浅的情况，导致了这次失败，你也险些丧命。"
         "还记得当时你并不想参与这次刺杀，却是被逼无奈，想到这里，你的心里感觉到了一丝悲凉。"
-        show axuan
         axuan "你的心中郁闷难平，眉头紧皱。刚来到你身旁的阿宣注意到了你的不对劲。"
         axuan "你是不是想起什么了。"
 
         menu:
             "闭口不言":
                 axuan "既然不想说，我也不会勉强，找回自己才是最重要的。"
-                hide axuan with dissolve
                 jump after_if_xiangqi
             "旁敲侧击":
                 xiaobai "阿宣，你有什么不想做却又不得不做的事吗？"
                 axuan "我？这种事情多了去了，不过既然来到这世上，当然能想着能在这天地间自由自在的走一遭，所以我就什么都学。"
                 axuan "奇门遁甲，五行八卦，我都会一点，就算人生命数有定，也要活得自由自在。"
                 "听了她的话，你感觉到了一丝明悟，心情也好了许多。"
-                hide axuan with dissolve
                 jump after_if_xiangqi
         label after_if_xiangqi:
+            scene bg 5
+            show yuchai with dissolve
             "你和阿宣在田野间散步，突然在一处悬崖边看到了一支玉钗，你只记得这只玉钗似乎是你的法器，但是与之相关的记忆残缺了很多，它有什么作用，它如何使用，你一无所知。"
+            hide yuchai with dissolve
             "为了搞清楚这只法器的来历并填补空缺的记忆，你决定："
             menu:
                 "自己再次仔细检查":

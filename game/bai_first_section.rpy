@@ -1,6 +1,6 @@
 label bai_first_section:
 
-
+    scene bg 4-1
     "不知过了多久，你从床上坐了起来，沉思片刻，你发现自己失去了大部分的记忆。"
 
     xiaobai   "这是哪？我是谁？"
@@ -14,6 +14,7 @@ label bai_first_section:
 
     xiaobai   "阿宣？"
 
+    scene bg 3
     show axuan
     "你随着老妇人走出房间，遇到了刚刚归来的捕蛇队。一个少年向你走来。"
 
@@ -79,6 +80,7 @@ label bai_first_section:
                 jump if_answer
 
     label after_if_nod_head:
+        scene bg 5
         "转眼间又是一天过去了，你们俩走在路上。"
         
         show axuan
@@ -103,11 +105,9 @@ label bai_first_section:
                 "你没有理会眼前紧急的一幕，但是阿宣顾不上这么多，为了救自己的爱犬，也莽撞的跟着跳下了悬崖。看到自己的救命恩人也遇到了危险，你这才有些动容"
                 hide axuan with moveoutbottom
                 "你决定"
-
                 menu after_dorong_choice:
                     "原地不动":
                         "看到一人一狗双双坠入悬崖，冷漠的你并没有太大的情感波动，正当你打算离开时，突然眼前一黑，耳边传来了一道玄妙的声音，你知道，大致的意思是由于关键人物许宣坠崖身亡，你无法完成了却与他的因果的任务，忽然你发现自己回到了做出选择的前一刻。"
-
                         jump after_dorong_choice
                     "跳崖救人":
                         
@@ -121,20 +121,18 @@ label bai_first_section:
                         jump after_save_dog
             "跳崖救犬":
                 "你正想要跳崖救犬，手指顺势朝向肚兜的方向，没想到，你的手中窜出一道法力，拖住了肚兜，将它救了回来。"
-                show dudou with moveouttop
                 jump after_save_dog
             "伸手援助":
                 "你正想要伸手帮忙，没想到，你的手中窜出一道法力，拖住了肚兜，将它救了回来。"
-                show dudou with moveouttop
                 jump after_save_dog
         label after_save_dog:
             "逃过一劫的肚兜脸上露出了胆怯的表情，身体颤抖着躲在阿宣脚边，尾巴无精打采的垂到了地上。"
-            hide dudou with dissolve
             axuan"你会法术？"
             "你突然记起，自己会法术，心里便有了底"
             xiaobai  "我自己先上去，你们慢慢上来吧。"
             "说完，你身轻如燕，跳上了山崖。"
             hide axuan with moveoutbottom
+            scene bg 25
             "山顶的秀丽景色让你十分沉醉。你来到了你醒来的地方，突然一段记忆涌入你的脑海。"
             "终于，你想起了你是谁。思绪跟随记忆回到了之前。"
             jump bai_second_section
