@@ -3,11 +3,15 @@ label bai_third_section:
     show axuan
     axuan"离永州已经不远了，还在想自己的来历？想不起自己的来历，是挺头疼的。"
     axuan"不过呢，很多事记得不如忘了好。人生无常，苦多乐少。既然如此，多记住些美好的时候就好了。"
+    play music music3
     "（啊啊啊~啊啊啊啊~船夫哼起了经典的千年等一回的曲调）"
     axuan"大叔，你唱的调子也太老了吧，都什么朝代了，我来唱吧。"
+    stop music
     "说完，他跳上了桅杆，唱起歌来~"
+    play music music4
     "听着他的嗓音，你的心情也好了许多。"
     hide axuan with dissolve
+    stop music
     scene bg 7
     "突然，天色转暗，风气浪涌，水流湍急。在你们面前有一叶小舟，挡在你们的必经之路上。"
     show nansheyao

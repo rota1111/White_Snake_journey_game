@@ -3,7 +3,9 @@ label xu_second_section:
     "永州城附近，两岸连山，碧水潺潺。你们二人正乘着小船前往永州。"
     axuan "离永州已经不远了，还在想自己的来历？想不起自己的来历，是挺头疼的。"
     axuan "不过呢，很多事记得不如忘了好。人生无常，苦多乐少。既然如此，多记住些美好的时候就好了。"
+    play music music3
     "（啊啊啊~啊啊啊啊~船夫哼起了经典的千年等一回的曲调）"
+    stop music 
     menu:
         "大叔闭嘴。":
             axuan "大叔，我喜欢清净一点。"
@@ -11,9 +13,11 @@ label xu_second_section:
         "我行我唱。":
             axuan "大叔，你唱的调子也太老了吧，都什么朝代了，我来唱吧。"
             "说完，他跳上了桅杆，唱起歌来~"
+            play music music4
             show xiaobai
             "小白不语，只是一味的偷笑，你也一头雾水，不知道是好听还是不好听。"
             hide xiaobai
+            stop music
             jump xu_second_one
     label xu_second_one:
         scene bg 7

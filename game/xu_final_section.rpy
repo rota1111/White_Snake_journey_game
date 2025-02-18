@@ -1,4 +1,5 @@
 label xu_final_section:
+    play music music2
     scene bg 23
     "一天上午，春雨蒙蒙，你正走在桥上，看到两位姑娘落下了一支珠钗，二人一位身着白衣，飘逸如仙，另一位身穿绿裙，灵动潇洒。"
     
@@ -19,6 +20,7 @@ label xu_final_section:
             jump xu_final_one
     label xu_final_one:
         scene bg 1
+    stop music
     "故事到这就结束了，你再次感到一阵眩晕，随后发现自己回到了家里。电视之中正播放着下一个春晚节目，而你的思绪却仍停在白蛇的故事中，久久不能释怀。"
 
     "你似乎收益良多，阿宣和小白的爱情跨越了种族的界限，展示了爱情的力量可以超越一切障碍；"

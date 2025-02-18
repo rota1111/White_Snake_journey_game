@@ -6,6 +6,7 @@ label bai_final_section:
     xiaoqing "但珠钗发动，你的功力全失，化回白蛇。我是用尽了最后一丝气力将这些记忆封印在了珠钗之中，今日你终于又打开了。"
     xiaobai "记忆能打开，正果还是不能修得，还是不能解脱，一时欢情，我记了五百年。他魂魄犹在，定是投胎转世，到世间的某处了，我要找到他。"
     hide xiaoqing with dissolve
+    play music music2
     scene bg 23
     "一天上午，春雨蒙蒙，你和小青走在桥上，有意落下那支珠钗。"
     show young_man
@@ -16,6 +17,7 @@ label bai_final_section:
     young_man "小娘子看着好生面善，是何方之人。"
     xiaobai "说来话长..."
     hide young_man with dissolve
+    stop music 
     scene bg 2 with dissolve
     scene bg 1
     "故事到这就结束了，你再次感到一阵眩晕，随后发现自己回到了家里。电视之中正播放着下一个春晚节目，而你的思绪却仍停在白蛇的故事中，久久不能释怀。"

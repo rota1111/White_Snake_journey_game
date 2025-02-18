@@ -30,6 +30,8 @@ define cunminbing = Character("村民丙", color = "#bdaeaf")
 label start:
 
     scene bg 1 with dissolve
+
+    play music music1
     "2025年1月28日晚，你正在和家人坐在一起看春晚"
     
     "此时电视里正在播放这小品《借伞》，喜欢白蛇传故事的你看的津津有味。"
@@ -48,6 +50,7 @@ label start:
         
         "与此同时，一段不属于你的记忆涌入了你的脑海："
 
+        stop music
         scene bg 3
         show axuan with dissolve
         "许宣是一个在山野间自由自在的活泼少年，清俊洒脱且果敢有担当。他生活在晚唐时期的捕蛇村，这是一个因捕蛇可以抵税而兴起的村落。"
@@ -97,11 +100,13 @@ label start:
                 jump if_save_people
 
     label baisuzhen:
+        
         scene bg 2 with dissolve
         "正当你沉浸于自己的幻想时，突然一道神秘的光芒闪过，你感到一阵眩晕，随后发现自己置身于一个陌生而古老的世界。"
         
         "与此同时，一段不属于你的记忆涌入了你的脑海："
-
+        
+        stop music
         scene bg 24
         show xiaobai with dissolve
 
