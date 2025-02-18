@@ -1,4 +1,5 @@
 label xu_forth_section:
+    scene section x4 with Dissolve(3)
     scene bg 9
     "（宝青坊内）"
     show boss with dissolve

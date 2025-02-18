@@ -30,7 +30,7 @@ image side xiaobai talk = "images/xiaobai talk.png"
 image side young_man talk = "images/young_man talk.png"
 
 label start:
-
+    scene section start with Dissolve(3)
     scene bg 1 with dissolve    
     
     play music music1
@@ -40,6 +40,7 @@ label start:
     "此时电视里正在播放这小品《借伞》，喜欢白蛇传故事的你看的津津有味。"
 
     "节目结束时你还在回味刚刚的小品情节，你不禁想到，他们的爱情故事真是美好。"
+    
 
     menu:
         me "要是我也是__就好了。"

@@ -1,5 +1,5 @@
 label bai_first_section:
-
+    scene section b1 with Dissolve(3)
     scene bg 4-1
     "不知过了多久，你从床上坐了起来，沉思片刻，你发现自己失去了大部分的记忆。"
 

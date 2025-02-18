@@ -1,4 +1,5 @@
 label xu_final_section:
+    scene section xf with Dissolve(3)
     play music music2
     scene bg 23
     "一天上午，春雨蒙蒙，你正走在桥上，看到两位姑娘落下了一支珠钗，二人一位身着白衣，飘逸如仙，另一位身穿绿裙，灵动潇洒。"

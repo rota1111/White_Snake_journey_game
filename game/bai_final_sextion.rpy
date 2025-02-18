@@ -1,4 +1,5 @@
 label bai_final_section:
+    scene section xf with Dissolve(3)
     scene bg 24
     "思绪回到现在（五百年后），你从玉钗中获取的记忆已了然于心，你现在终于知道自己屡屡突破失败的原因。"
     xiaobai talk"最后一刻我保住了他的魂魄。"

@@ -1,6 +1,5 @@
-
-
 label xu_first_section:
+    scene section x1 with Dissolve(3)
     scene bg 3
     "距离你救下那位陌生的白衣女子已经过去了三天，她还迟迟未醒，你像往常一样带着一筐草药满载而归。"
     

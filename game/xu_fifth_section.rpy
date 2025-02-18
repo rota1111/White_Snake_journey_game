@@ -1,4 +1,6 @@
 label xu_fifth_section:
+    scene section x5 with Dissolve(3)
+    scene bg 20
     show guoshi with dissolve
     "过了片刻，国师现身了。"
     guoshi "竟然是这么一条巨蟒，多亏了你这个小妖怪，才能预先布下这个困妖阵。你们就等着形神俱灭吧。"

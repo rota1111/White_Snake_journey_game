@@ -1,4 +1,5 @@
 label bai_forth_section:
+    scene section b4 with Dissolve(3)
     scene bg 11
     "你和阿宣小心翼翼地踏入了地宫深处，四周昏暗，只有墙壁上的火把发出微弱的光芒。"
     show axuan_ with dissolve

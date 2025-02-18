@@ -1,40 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/xu_first_section.rpy", line 51, in script
-    play music music7
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/xu_first_section.rpy", line 51, in <module>
-    play music music7
-NameError: name 'music7' is not defined
+  File "game/script.rpy", line 34, in script
+    text "序：我又双叒叕穿越了？"
+Exception: Sayer 'text' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/xu_first_section.rpy", line 51, in script
-    play music music7
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
-    self.call("execute")
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/xu_first_section.rpy", line 51, in <module>
-    play music music7
-NameError: name 'music7' is not defined
+  File "game/script.rpy", line 34, in script
+    text "序：我又双叒叕穿越了？"
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 581, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 470, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'text' is not defined.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.4.24120703
 白蛇之旅 1.3
-Tue Feb 18 20:36:05 2025
+Tue Feb 18 20:59:59 2025

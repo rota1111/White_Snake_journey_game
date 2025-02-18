@@ -1,4 +1,5 @@
 label bai_fifth_section:
+    scene section b5 with Dissolve(3)
     scene bg 8
     "夜色将至，你和小青在一座废弃的寺庙里过夜，四周荒凉而寂静，只有风声在耳边低语。你们找了一处相对干燥的地方，点燃了一堆小火，火光在黑暗中跳跃，为这荒凉的寺庙增添了一丝温暖。"
     menu:

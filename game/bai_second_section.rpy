@@ -1,4 +1,5 @@
 label bai_second_section:
+    scene section b2 with Dissolve(3)
     scene bg 26
     "晚唐末年，天下将乱。妖魔鬼怪，出没人间。皇帝沉迷于求仙，国师太阴真君屡试未果，皇帝震怒。国师逼迫百姓捕蛇，修炼道法以重得皇帝宠幸。"
     "作为蛇妖，你被师傅派出刺杀国师，为族人报仇。"

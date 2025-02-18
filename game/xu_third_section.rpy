@@ -1,4 +1,5 @@
 label xu_third_section:
+    scene section x3 with Dissolve(3)
     scene bg 11
     "你和小白小心翼翼地踏入了地宫深处，四周昏暗，只有墙壁上的火把发出微弱的光芒。"
     axuan talk "跟我来，小白，我们得小心，这里可能有未知的危险。"
