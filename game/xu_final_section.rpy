@@ -8,14 +8,14 @@ label xu_final_section:
             "你不动声色的拿走了珠钗，没有想着还给失主，只是在思考这只珠钗能换多少钱，也许对你来说，这也是一份有价值的宝藏吧，但是冥冥之中，你感觉自己好像失去了什么重要的东西，不过，那也与你无关了。"
             jump xu_final_one
         "拾起珠钗，物归原主。":
-            young_man "姑娘，你的珠钗掉了。"
-            show xiaobai with dissolve
+            young_man talk"姑娘，你的珠钗掉了。"
+            show xiaobai_ with dissolve
             xiaobai "谢谢官人。"
-            young_man "这珠钗年代久远，可是宝贵之物"
+            young_man talk"这珠钗年代久远，可是宝贵之物"
             xiaobai "是啊，多谢小官人捡到。这可是万万不能丢失的。"
-            young_man "小娘子看着好生面善，是何方之人。"
+            young_man talk"小娘子看着好生面善，是何方之人。"
             xiaobai "说来话长..."
-            hide xiaobai with dissolve
+            hide xiaobai_ with dissolve
             scene bg 2
             jump xu_final_one
     label xu_final_one:

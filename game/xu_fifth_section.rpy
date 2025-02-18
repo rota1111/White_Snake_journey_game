@@ -4,7 +4,7 @@ label xu_fifth_section:
     guoshi "竟然是这么一条巨蟒，多亏了你这个小妖怪，才能预先布下这个困妖阵。你们就等着形神俱灭吧。"
     scene bg 21
     "能看到天空之中出现了一道漩涡，不断有奇异的光从你们三人身上散出，被吸走。"
-    axuan "这是什么。"
+    axuan talk "这是什么。"
     hide guoshi with dissolve
     show xiaoqing with dissolve
     xiaoqing "这就是你的元神之气。等你元气散尽就魂飞魄散再无来世，再无来世。"
@@ -55,9 +55,9 @@ label xu_fifth_section:
             "此时你们二人的元神正在不断流失，你们依靠自己无法逃出此地，再不做出反抗，你们将会魂飞魄散。"
     scene bg 22
     "弥留之际，你看到有人在破阵，不过由于你的修为低微，灵魂很快就离开了你的身体。"
-    show xiaobai with dissolve
+    show xiaobai_ with dissolve
     xiaobai "阿宣，你听外面有人在破阵。"
     "可是此时你的身躯已经冰冷，你的灵魂飘荡在空中不断消散，看着这一切却无法做出什么。"
     "小白急中生智，用玉钗对抗吸力，成功等到了破阵的那一刻，你的肉身虽然已毁，但是你成功保住了你的魂魄，让你得以转世投胎。"
-    hide xiaobai with dissolve
+    hide xiaobai_ with dissolve
     jump xu_final_section

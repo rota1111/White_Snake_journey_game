@@ -32,7 +32,7 @@ label bai_second_section:
                 axuan "既然不想说，我也不会勉强，找回自己才是最重要的。"
                 jump after_if_xiangqi
             "旁敲侧击":
-                xiaobai "阿宣，你有什么不想做却又不得不做的事吗？"
+                xiaobai talk"阿宣，你有什么不想做却又不得不做的事吗？"
                 axuan "我？这种事情多了去了，不过既然来到这世上，当然能想着能在这天地间自由自在的走一遭，所以我就什么都学。"
                 axuan "奇门遁甲，五行八卦，我都会一点，就算人生命数有定，也要活得自由自在。"
                 "听了她的话，你感觉到了一丝明悟，心情也好了许多。"
@@ -51,8 +51,8 @@ label bai_second_section:
                     "阿宣拿起玉钗细细检查。发现钗子上印着小小的两个字“宝青”两个字。"
                     jump after_jiancha
             label after_jiancha:
-                show axuan with dissolve
+                show axuan_ with dissolve
                 axuan"宝青，宝青？啊！我知道了，在永州城外的小树林有一个小作坊，名叫“宝青坊”，你这珠钗肯定是那做的，我们一问便知。"
                 "你也想弄清楚这个法器的来历，于是你们便踏上了新的旅途。"
-                hide axuan with dissolve
+                hide axuan_ with dissolve
                 jump bai_third_section

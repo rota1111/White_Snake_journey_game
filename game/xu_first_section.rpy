@@ -4,12 +4,13 @@ label xu_first_section:
     scene bg 3
     "距离你救下那位陌生的白衣女子已经过去了三天，她还迟迟未醒，你像往常一样带着一筐草药满载而归。"
     
-    show dudou at left
+    show dudou with moveintop
     "你刚进大门，就见一只大黄狗迎了上来，你知道这是你的伙伴，你给它起名叫做肚兜。"
 
-    axuan "肚兜！"
+    axuan talk "肚兜！"
     dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
-    show xiaobai with dissolve
+    hide dudou with moveintop
+    show xiaobai_ with dissolve
     "和肚兜打闹了一会，你才发现你之前救助的白衣女子也站在一旁，你内心十分好奇，想要弄清楚她的身份。"
     menu:
         "你醒来了？":
@@ -20,26 +21,25 @@ label xu_first_section:
             jump xu_first_one
     label xu_first_one:
         "你这才意识到自己有一些冒昧，故而露出愧疚的微笑，先介绍起自己来。"
-        axuan "我叫许宣，是捕蛇村的一员，我在瀑布旁的大石头上发现了昏迷的你，所以将你带了回来。"
+        axuan talk"我叫许宣，是捕蛇村的一员，我在瀑布旁的大石头上发现了昏迷的你，所以将你带了回来。"
         "这时，她的表情才舒缓下来，露出一丝感激的神色，但仍旧没有说话。"
-        hide xiaobai
-        hide dudou
+        hide xiaobai_ with dissolve
         show laofuren with dissolve
         laofuren "阿宣，这姑娘什么都不记得了。"
         hide laofuren with dissolve
-        axuan "没事的，明天我带你去找到你的地方，没准有什么线索。"
+        axuan talk"没事的，明天我带你去找到你的地方，没准有什么线索。"
         "只见那姑娘只是点点头，答应了你的建议。"
 
         scene bg 4
-        show xiaobai with dissolve
+        show xiaobai_ with dissolve
         "转眼间又是一天过去了，你们俩走在路上。"
         
-        axuan "下面就是我们捕蛇的地方。"
+        axuan talk "下面就是我们捕蛇的地方。"
         "你指了指面前的瀑布下。"
         "你们为什么要捕蛇？"
-        axuan "近些年，天下越来越乱，赋税也越来越重。国师府说，捕蛇可以抵税可以不被拉丁充劳役。大家就聚到一起捕蛇来了。捕蛇凶险，可是不捕蛇就更凶险。"
+        axuan talk "近些年，天下越来越乱，赋税也越来越重。国师府说，捕蛇可以抵税可以不被拉丁充劳役。大家就聚到一起捕蛇来了。捕蛇凶险，可是不捕蛇就更凶险。"
         girl "那捕到的蛇有什么用呢？"
-        axuan "谁知道呢，也许是吃了或者做成了药材？"
+        axuan talk"谁知道呢，也许是吃了或者做成了药材？"
         hide xiaobai with dissolve
 
     scene bg 5
@@ -48,7 +48,7 @@ label xu_first_section:
     "就在这时，肚兜不知何时跳上了一处陡崖，正要回到你身旁，没想到脚下一滑，掉了下去。"
     dudou "（惨叫） 嗷~"
     hide dudou with moveoutbottom
-    axuan "（大喊）肚兜！"
+    axuan talk "（大喊）肚兜！"
     menu:
         "静观其变":
             "对于眼前的一幕你没有多大动作，只是为肚兜感到惋惜，毕竟自己的命更加重要。"
@@ -64,34 +64,34 @@ label xu_first_section:
             jump xu_first_two
     label xu_first_two:
         "逃过一劫的肚兜脸上露出了胆怯的表情，身体颤抖着躲在你脚边，尾巴无精打采的垂到了地上。"
-        axuan "你会法术？"
-        show xiaobai with dissolve
+        axuan talk "你会法术？"
+        show xiaobai_ with dissolve
         girl "我自己先上去，你们慢慢上来吧。"
         "说完，她身轻如燕，跳上了山崖。"
-        hide xiaobai with dissolve
+        hide xiaobai_ with dissolve
         "你也不甘落后，奋力追上她的背影。"
-        show xiaobai with dissolve
+        show xiaobai_ with dissolve
         "当你追上她之后，你看见她正愣在原地，眉头紧皱，面色痛苦。"
-        axuan "你是不是想起什么了？"
+        axuan talk "你是不是想起什么了？"
         girl "阿宣，你有什么不想做却又不得不做的事吗？"
         menu:
             "没有，我一向随心所欲，逍遥自在，条条框框约束不了我。":
                 girl "（怀疑）真的吗？你莫不是在骗我？"
-                axuan "还是姑娘聪慧，我只是在开玩笑。其实这种事情多了去了，不过既然来到这世上，当然能想着能在这天地间自由自在的走一遭，所以我就什么都学。"
+                axuan talk "还是姑娘聪慧，我只是在开玩笑。其实这种事情多了去了，不过既然来到这世上，当然能想着能在这天地间自由自在的走一遭，所以我就什么都学。"
                 jump xu_first_three
             "当然，这种事情多了去了。":
-                axuan "我？这种事情多了去了，不过既然来到这世上，当然能想着能在这天地间自由自在的走一遭，所以我就什么都学。"
+                axuan talk "我？这种事情多了去了，不过既然来到这世上，当然能想着能在这天地间自由自在的走一遭，所以我就什么都学。"
                 jump xu_first_three
         label xu_first_three:
-            axuan "奇门遁甲，五行八卦，我都会一点，就算人生命数有定，也要活得自由自在。听了你的话，你感觉那姑娘的心情也好了许多。"
+            axuan talk "奇门遁甲，五行八卦，我都会一点，就算人生命数有定，也要活得自由自在。听了你的话，你感觉那姑娘的心情也好了许多。"
             xiaobai "对了，我刚刚想起我叫小白，其他的事情暂时还没太想起来。"
-            axuan "小白？真是个好听的名字。"
-            hide xiaobai with dissolve
+            axuan talk "小白？真是个好听的名字。"
+            hide xiaobai_ with dissolve
 
             "小白不语，没有理会你的马屁。但是你终于知道了这位姑娘的身份。"
             show yuchai with dissolve
             "你和小白在田野间散步，突然在一处悬崖边看到了一支玉钗，只见小白再三检查，仍旧没有看出什么特别的，只是发现钗子上印着小小的两个字“宝青”，她不知道这是宝物的名字，还是别的标识，正在她一头雾水之时，你看出来你的疑惑，主动解释道。"
             hide yuchai with dissolve
-            axuan "宝青，宝青？啊！我知道了，在永州城外的小树林有一个小作坊，名叫“宝青坊”，你这珠钗肯定是那做的，我们一问便知。"
+            axuan talk "宝青，宝青？啊！我知道了，在永州城外的小树林有一个小作坊，名叫“宝青坊”，你这珠钗肯定是那做的，我们一问便知。"
             "你也想弄清楚这个法器的来历，于是你们便踏上了新的旅途。"
             jump xu_second_section

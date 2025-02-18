@@ -1,22 +1,22 @@
 label bai_forth_section:
     scene bg 11
     "你和阿宣小心翼翼地踏入了地宫深处，四周昏暗，只有墙壁上的火把发出微弱的光芒。"
-    show axuan with dissolve
+    show axuan_ with dissolve
     axuan "跟我来，小白，我们得小心，这里可能有未知的危险。"
-    xiaobai "小心，阿宣，这里有蹊跷，我们不能大意。"
+    xiaobai talk"小心，阿宣，这里有蹊跷，我们不能大意。"
     "你们沿着石阶向下，发现了一条隐藏的密道。"
     axuan "真没想到，这地宫底下，还有这么一条密道，我们得想办法出去。"
-    xiaobai "我们从这里走，看看能不能找到出路。"
+    xiaobai talk"我们从这里走，看看能不能找到出路。"
     "你们走进了密道，发现了一个复杂的机关阵列。"
     scene bg 12
     axuan "朱雀在顶，玄武入宫，宫为内卦，门为外卦，八门……这边是生门，我们走这边。经过一番寻找，你们找到了生门，继续前进。"
-    xiaobai "这是什么地方？"
+    xiaobai talk"这是什么地方？"
     axuan "看来是藏在地下的一个镇妖法阵，不过对人无害。"
     scene bg 13
     "你们继续探索，发现了一个古老的道家机关。"
     axuan "这地底下怎么会有一个道家机关呢？想必原来是一个道观，荒废了，后来又在上面建了一座塔。"
-    xiaobai "没事，这个阵势有迹可循，我们一定能出去。"
-    hide axuan with dissolve
+    xiaobai talk"没事，这个阵势有迹可循，我们一定能出去。"
+    hide axuan_ with dissolve
     "你开始研究机关，你发现这个阵势像是一幅杂乱的文字石碑，又许多个可移动的小石块组成。"
     "经过尝试，你终于复原了这个石碑，只见石碑上写着："
     "天地玄宗 万无本根"
@@ -24,10 +24,10 @@ label bai_forth_section:
     "证吾神通 鬼妖丧胆"
     "诛妖除魔 灭形灭神"
     "看到这些文字，你知道这是太阴真经的口诀，这与你的法力产生了共鸣，突然，你被宝钗吸收的记忆涌入你的脑海，你想起了一切。"
-    xiaobai "阿宣，妖生来就要被赶尽杀绝吗？"
-    show axuan with dissolve
+    xiaobai talk "阿宣，妖生来就要被赶尽杀绝吗？"
+    show axuan_ with dissolve
     axuan "天天诛妖除魔，逼我们捕蛇。天下已经乱成这样了，只看到越诛妖除魔，天下越乱。小白，无论怎样有我在。"
-    hide axuan with dissolve
+    hide axuan_ with dissolve
     scene bg 14
     "由于你复原了石板，地宫的出口也打开了，你和阿宣走了出去，看到了等在一旁的小青，只见她脸上的愤怒已然消失不见，想必是冷静了下来。"
     "值得一提的是，肚兜作为“人质”，被小青踩在了脚下，看见你们出来，她向你露出期待的目光。"
@@ -36,27 +36,27 @@ label bai_forth_section:
         "拒绝跟小青回去。":
             "你没有和小青对视，而是躲着她，阿宣趁机将肚兜抢了回来，小青也没有再和你纠缠，她清楚这是你的选择。"
             "就在这时，异变突生，小青身上出现了异常的红光，她整个人跪了下去，发出痛苦的哀嚎，这下，你不得不前去关心小青的情况。"
-            xiaobai "小青，你怎么了？"
+            xiaobai talk"小青，你怎么了？"
             xiaoqing "（痛苦地）……别碰我！是烈阳断魂鳞……我答应了师父，三日之内带你回洞，否则……断魂鳞发……肌肤寸断而死。"
-            show axuan with dissolve
+            show axuan_ with dissolve
             axuan "小白，这是怎么回事？什么是烈阳断魂鳞？"
-            hide axuan with dissolve
+            hide axuan_ with dissolve
             show xiaoqing with dissolve
             xiaoqing "这是师父给我的军令状，用来确保我完成任务。如果我不能按时回去，鳞片会发作，夺走我的生命，如今已经两日有余，越临近期限，发作的越频繁。"
             "你的脸色变得苍白，她知道时间紧迫，必须立刻采取行动。"
-            xiaobai "我知道，阿宣。我们需要尽快找到师父，或许他有办法解除这个诅咒。"
+            xiaobai talk"我知道，阿宣。我们需要尽快找到师父，或许他有办法解除这个诅咒。"
             hide xiaoqing with dissolve
             jump after_back_with_xiaoqing
         "同意跟小青回去。":
             jump after_back_with_xiaoqing
     label after_back_with_xiaoqing:
-        xiaobai "小青，我想通了，我跟你走。"
-        xiaobai "阿宣，我们就分开吧。"
-        show axuan with dissolve
+        xiaobai talk"小青，我想通了，我跟你走。"
+        xiaobai talk"阿宣，我们就分开吧。"
+        show axuan_ with dissolve
         axuan "为什么？"
-        xiaobai "天道无情，天地有规矩，有很多不想做，但不得不做的事。你是人，我是妖，你说过，有些事，记得不如忘了好。"
+        xiaobai talk"天道无情，天地有规矩，有很多不想做，但不得不做的事。你是人，我是妖，你说过，有些事，记得不如忘了好。"
         axuan "你说得对，人妖两途，天道无情，但你我之间是有的。我一定会有办法的，我会回来的，等我。"
-        hide axuan with dissolve
+        hide axuan_ with dissolve
         "你的心中充满了不舍和无奈，你知道这次离开可能意味着永远的分别，但你也明白，为了小青，为了妖族，你必须做出选择。"
         "你和小青的身影渐渐消失在远方，而阿宣和肚兜也踏上了另一条道路。"
         jump bai_fifth_section

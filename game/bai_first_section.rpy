@@ -3,7 +3,7 @@ label bai_first_section:
     scene bg 4-1
     "不知过了多久，你从床上坐了起来，沉思片刻，你发现自己失去了大部分的记忆。"
 
-    xiaobai   "这是哪？我是谁？"
+    xiaobai talk "这是哪？我是谁？"
 
     show laofuren with dissolve
     laofuren "你醒了，这里是捕蛇村，你好像什么都想不起来了。"
@@ -12,10 +12,10 @@ label bai_first_section:
 
     hide laofuren with dissolve
 
-    xiaobai   "阿宣？"
+    xiaobai talk "阿宣？"
 
     scene bg 3
-    show axuan with dissolve
+    show axuan_ with dissolve
     "你随着老妇人走出房间，遇到了刚刚归来的捕蛇队。一个少年向你走来。"
 
     axuan "你醒来了？"
@@ -29,33 +29,32 @@ label bai_first_section:
             jump not_nod_head
     label nod_head:
         "他看到你只是点点头，便简单回应了一下，转身逗起了一直跟着他的小狗。"        
-
+        show dudou with moveintop
         axuan"肚兜！"
         
-        show dudou at left
         dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
         hide dudou with dissolve
-        hide axuan with dissolve
+        hide axuan_ with dissolve
         
         show cunmin with dissolve
         cunmin "阿宣你又没捕到蛇，光采草药也抵不了税啊。"
         hide cunmin with dissolve
 
-        show axuan with dissolve
+        show axuan_ with dissolve
         axuan"抵不了税，救人也好啊。"
 
         "你在旁边默默看着，原来阿宣是个善良的人啊。"
         
         "忽然，旁边堆着的竹筐吸引了你的注意，你发现每个竹筐里装的都是蛇，奇怪的是，你似乎能够听懂这些蛇的叫声，你突然头痛欲裂，连忙离开了这里。"
-        hide axuan with dissolve
+        hide axuan_ with dissolve
 
         show laofuren with dissolve
         laofuren"阿宣，这姑娘什么都不记得了。"
         hide laofuren with dissolve
 
-        show axuan with dissolve
+        show axuan_ with dissolve
         axuan"没事的，明天我带你去找到你的地方，没准有什么线索。"
-        hide axuan with dissolve
+        hide axuan_ with dissolve
         jump after_if_nod_head
 
     label not_nod_head:
@@ -66,29 +65,29 @@ label bai_first_section:
             "如实回答，我好像什么都不记得了":
                 
                 axuan"没事的，明天我带你去找到你的地方，没准有什么线索。"
-                hide axuan with dissolve
+                hide axuan_ with dissolve
                 jump after_if_nod_head
             "默不作声，静静站在那里。":
                 
                 axuan"不愿回答也没关系，那我就不打扰了，姑娘请便。"
                 
-                hide axuan with dissolve
+                hide axuan_ with dissolve
                 "你已经醒来，不便继续住在陌生人家里，于是你离开了村子，但是你不熟悉路，最终迷失在了丛林中，缺水而死。"
 
                 "弥留之际，你的耳边传来了一道玄妙的声音，那是【生生不息的激荡】，忽然你发现自己回到了做出选择的前一刻。"
-                show axuan with dissolve
+                show axuan_ with dissolve
                 jump if_answer
 
     label after_if_nod_head:
         scene bg 5
         "转眼间又是一天过去了，你们俩走在路上。"
         
-        show axuan with dissolve
+        show axuan_ with dissolve
         axuan"下面就是我们捕蛇的地方。"
 
         "他指了指面前的瀑布下。"
 
-        xiaobai   "你们为什么要捕蛇？"
+        xiaobai  talk "你们为什么要捕蛇？"
 
         axuan"近些年，天下越来越乱，赋税也越来越重。国师府说，捕蛇可以抵税可以不被拉丁充劳役。大家就聚到一起捕蛇来了。捕蛇凶险，可是不捕蛇就更凶险。"
 
@@ -103,7 +102,7 @@ label bai_first_section:
             "原地不动":
 
                 "你没有理会眼前紧急的一幕，但是阿宣顾不上这么多，为了救自己的爱犬，也莽撞的跟着跳下了悬崖。看到自己的救命恩人也遇到了危险，你这才有些动容"
-                hide axuan with moveoutbottom
+                hide axuan_ with moveoutbottom
                 "你决定"
                 menu after_dorong_choice:
                     "原地不动":
@@ -112,12 +111,12 @@ label bai_first_section:
                     "跳崖救人":
                         
                         "你正要跳崖救人，手指顺势朝向阿宣的方向，没想到，你的手中窜出一道法力，拖住了他，将他救了回来。不远处的肚兜也被你顺手施救。"
-                        show axuan with moveouttop
+                        show axuan_ with moveouttop
                         show dudou with moveouttop 
                         jump after_save_dog
                     "伸手援助":
                         "你正要跳崖救人，手指顺势朝向阿宣的方向，没想到，你的手中窜出一道法力，拖住了他，将他救了回来。不远处的肚兜也被你顺手施救。"
-                        show axuan with moveouttop
+                        show axuan_ with moveouttop
                         jump after_save_dog
             "跳崖救犬":
                 "你正想要跳崖救犬，手指顺势朝向肚兜的方向，没想到，你的手中窜出一道法力，拖住了肚兜，将它救了回来。"
@@ -129,9 +128,9 @@ label bai_first_section:
             "逃过一劫的肚兜脸上露出了胆怯的表情，身体颤抖着躲在阿宣脚边，尾巴无精打采的垂到了地上。"
             axuan"你会法术？"
             "你突然记起，自己会法术，心里便有了底"
-            xiaobai  "我自己先上去，你们慢慢上来吧。"
+            xiaobai  talk "我自己先上去，你们慢慢上来吧。"
             "说完，你身轻如燕，跳上了山崖。"
-            hide axuan with moveoutbottom
+            hide axuan_ with moveoutbottom
             scene bg 25
             "山顶的秀丽景色让你十分沉醉。你来到了你醒来的地方，突然一段记忆涌入你的脑海。"
             "终于，你想起了你是谁。思绪跟随记忆回到了之前。"

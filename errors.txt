@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label gobang_label is defined twice, at File "game/little-game.rpyc", line 1:
-
-and File "game/script.rpy", line 29:
-label gobang_label:
-
+File "game/xu_first_section.rpy", line 7: expected 'simple_expression' not found.
+    show dudou at with moveintop
+                  ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue Feb 18 15:21:17 2025
+Tue Feb 18 18:25:51 2025

@@ -1,6 +1,6 @@
 label bai_third_section:
     "永州城附近，两岸连山，碧水潺潺。你们二人正乘着小船前往永州。"
-    show axuan with dissolve
+    show axuan_ with dissolve
     axuan"离永州已经不远了，还在想自己的来历？想不起自己的来历，是挺头疼的。"
     axuan"不过呢，很多事记得不如忘了好。人生无常，苦多乐少。既然如此，多记住些美好的时候就好了。"
     play music music3
@@ -10,7 +10,7 @@ label bai_third_section:
     "说完，他跳上了桅杆，唱起歌来~"
     play music music4
     "听着他的嗓音，你的心情也好了许多。"
-    hide axuan with dissolve
+    hide axuan_ with dissolve
     stop music
     scene bg 7
     "突然，天色转暗，风气浪涌，水流湍急。在你们面前有一叶小舟，挡在你们的必经之路上。"
@@ -30,13 +30,13 @@ label bai_third_section:
             "你化身成了一条白蛇，用锋利的尾巴一扫，将来势汹汹的蛇妖斩落水下，成功逃过一劫。但是由于你用力过猛，法力失控，昏了过去。"
             hide nansheyao with dissolve
     scene bg 8
-    show axuan with dissolve
+    show axuan_ with dissolve
     
     "再次醒来，你发现自己躺在阿宣的怀里，你大惊失色，连忙推开他的手臂。"
     "在阿宣醒来之后，你得知了他抱着你的缘由：在你昏过去之后，法力外泄，身上冷的像冰块一样，是他将身体当作暖炉，你才醒过来了的。"
-    xiaobai  "你看到我的尾巴了吧，我是个妖怪。"
+    xiaobai talk "你看到我的尾巴了吧，我是个妖怪。"
     axuan"是就是呗，人间多的是长了两只脚的恶人，长了条尾巴又怎么样，你不是恶人，就算是妖，你也是个好妖。"
-    hide axuan with dissolve
+    hide axuan_ with dissolve
     scene bg 9
     "你们继续踏上了前往宝青坊的旅程，经过一番寻找，你们来到了宝青坊门前。"
     show boss with dissolve
@@ -48,10 +48,10 @@ label bai_third_section:
             boss "哦？真的吗，那敢问姑娘想要哪种法宝，本坊有各种各样的宝贝，从灵珠到仙草，从法宝到神器，应有尽有。不过，每一件都有它的代价。"
             "她转身，目光在你们身上扫过，仿佛在评估你们的价值。你微微皱眉，虽然有些失忆，但直觉告诉你，这里的每一件东西都不是轻易能得到的。"
             hide boss with dissolve 
-            show axuan with dissolve
+            show axuan_ with dissolve
             "阿宣则显得有些紧张，他紧紧握住你的手，低声说道："
             axuan "小白，我们得小心，这里的一切看起来都很不寻常。"
-            hide axuan with dissolve
+            hide axuan_ with dissolve
             show boss with dissolve
             "老板娘似乎察觉到了阿宣的紧张，她轻笑一声，继续说道："
             boss "比如姑娘头上这件‘忘忧玉钗’，它能够吸取他人法力为己所用，但代价是……她故意停顿了一下，眼神中闪过一丝狡黠，"
@@ -64,13 +64,13 @@ label bai_third_section:
             hide boss with dissolve
             jump after_is_fabao_has_problem
     label after_is_fabao_has_problem:
-        show axuan with dissolve
+        show axuan_ with dissolve
         axuan "我说呢，我遇到她的时候，她就失去了记忆。记忆消失，还要法力干什么。"
-        hide axuan with dissolve
+        hide axuan_ with dissolve
         show boss with dissolve
         boss "天之道，有所得，必有所失。这种移花接木，改变乾坤之事，我十分感兴趣。"
         boss "而且这只玉钗最初的主人并不是你，而是另有其人。"
-        xiaobai  "那关于原主人，你能帮我们找到一些线索吗？"
+        xiaobai talk "那关于原主人，你能帮我们找到一些线索吗？"
         boss "当然这片蛇鳞就是原主人之物。"
         hide boss with dissolve
         "你拿起了这片蛇鳞，细细感受了一下它，发现这片蛇鳞上的法力，与你同宗同源，突然你缺失的记忆全部涌入了你的脑海。"        
@@ -87,13 +87,13 @@ label bai_third_section:
                 show xiaoqing with dissolve
                 xiaoqing "小白！"
                 "你认出了黑衣人是你的妹妹小青，你十分好奇她为什么会在这。"
-                xiaobai "小青，你怎么在这。"
+                xiaobai talk"小青，你怎么在这。"
                 xiaoqing "你失忆了？我是来带你回去的，师傅发现你在刺杀失败之后，一直和一个捕蛇人在一起，怀疑你成了叛徒，我来带你回去证明你的清白。"
-                xiaobai "是阿宣救了我，他对我很好，我不会离开他的！"
+                xiaobai talk"是阿宣救了我，他对我很好，我不会离开他的！"
                 "小青的脸色瞬间变得严肃，她的眼神中透露出一丝无奈和担忧"
                 xiaoqing "小白，你真的糊涂了！我们妖族和人类是不同的，你怎么能和他在一起？师傅已经怀疑你被人类迷惑，失去了本心。如果再不回去，你会被整个蛇族视为叛徒的！"
                 "你摇了摇头，眼神坚定地看着昏迷不醒的阿宣，你的眼中闪过一丝温柔。"
-                xiaobai "小青，我知道你是为了我好，但阿宣不是普通的捕蛇人。他救了我，照顾我，甚至愿意为我放弃一切。我不能就这样离开他。我意已决，我是不会回去的。"
+                xiaobai talk"小青，我知道你是为了我好，但阿宣不是普通的捕蛇人。他救了我，照顾我，甚至愿意为我放弃一切。我不能就这样离开他。我意已决，我是不会回去的。"
                 hide xiaoqing with dissolve
                 "小青失望的离开了，你连忙查看阿宣的伤势，发现他早已断了气，你意识到自己又一次做错了选择，但幸好你现在有后悔药可以吃。"
                 "恍惚之间，你的耳边传来了一道玄妙的声音，那是【生生不息的激荡】，忽然你发现自己回到了做出选择的前一刻。"
@@ -104,11 +104,11 @@ label bai_third_section:
                 "就在这时，黑衣人突然摘下了兜帽，露出了本来的面目。你愣了一下，随后惊讶地喊道"
                 hide black_man with dissolve
                 show xiaoqing with dissolve
-                xiaobai "小青？！"
+                xiaobai talk"小青？！"
                 "小青的脸在月光下显得格外冷峻，她的眼神中带着一丝复杂的情绪，既有愤怒，也有无奈。她冷冷地看着你，语气中带着一丝责备。"
                 xiaoqing "小白，你到底在做什么？师傅派我来带你回去，没想到你竟然和捕蛇人混在一起，还和我动手！"
                 "你的心中涌起一股复杂的情绪，小青是你的妹妹，也是你最亲近的人之一。你从未想过会有一天，你们会在这种情况下对峙。"
-                xiaobai "小青，我不是叛徒。阿宣不是普通的捕蛇人。他救了我，照顾我，甚至愿意为我放弃一切。"
+                xiaobai talk"小青，我不是叛徒。阿宣不是普通的捕蛇人。他救了我，照顾我，甚至愿意为我放弃一切。"
                 xiaoqing "国师修炼的太阴真功，和我们蛇族同出一脉，他吸取我们的魂魄精华修炼他的功力，师傅恨透了国师，恨透了人，师傅说，人心险恶，只要是人就险恶！"
                 axuan "原来国师修炼的是这么邪门的功法，我真的不知道他是这样的。"
                 xiaoqing "假惺惺，你一个捕蛇人，帮凶，帮凶就该死！我杀了你这个捕蛇人。"

@@ -8,7 +8,7 @@ label bai_fifth_section:
             jump bai_fifth_one
         "提醒小青保持警惕。":
             show xiaoqing with dissolve
-            xiaobai "小青，我们得保持警惕，这里不安全。"
+            xiaobai talk"小青，我们得保持警惕，这里不安全。"
             xiaoqing "（点头）我知道，姐姐。我会守夜，你先休息一会儿。"
             "你虽然疲惫，但心中的不安让你难以入眠。你靠在墙角，闭上眼睛，试图通过冥想来恢复体力和精神。"
             hide xiaoqing with dissolve
@@ -17,10 +17,10 @@ label bai_fifth_section:
     label bai_fifth_one:
         show guo_shi_di_zi with dissolve
         guo_shi_di_zi "（冷笑）没想到吧，蛇妖，我们又见面了。这次，你不会再有机会逃脱了。"
-        xiaobai "你是怎么找到我们的？"
+        xiaobai talk"你是怎么找到我们的？"
         guo_shi_di_zi "国师的法力无边，你们的行踪早已被我们掌握。今天，我要彻底消灭你这个妖孽。"
         "小青立刻站起身，拔出剑来，准备迎战。小白也迅速调整状态，准备与国师弟子决一死战。"
-        xiaobai "小青，我们不能让他得逞。保护好自己，我们并肩作战。"
+        xiaobai talk"小青，我们不能让他得逞。保护好自己，我们并肩作战。"
         hide guo_shi_di_zi with dissolve
         show xiaoqing with dissolve
         xiaoqing "姐姐，我们不会输的。"
@@ -63,11 +63,11 @@ label bai_fifth_section:
                 "小青看出了你的状况不佳，于是为你带路，准备和即将来袭的国师决一死战，你们通过国师弟子知道了国师将会到捕蛇村的消息，便连忙赶了过去。"
                 scene bg 19
                 "当你们来到了捕蛇村附近的峡谷，突然被出现的阿宣拦了下来，你和小青发现阿宣的屁股上长出来一条狗尾巴，这意味着他也变成了妖。"
-                show axuan with dissolve
+                show axuan_ with dissolve
                 axuan "小白，如果你与国师开战的话，村子就会毁了，不知有多少村民会家破人亡，收手吧。"
                 axuan "小白，你听我说，我把自己变成妖了，我们俩都是妖了。"
                 axuan "你身形巨大，那又怎么样？天地这么大，容下多少山川湖海。我虽然是个最弱最小的妖，但我会拼尽全力去保护你。如果世间容不下我们，我们就一起去这天地的尽头，八荒四海，总有个容身之所。"
-                hide axuan with dissolve
+                hide axuan_ with dissolve
                 scene bg 20
                 "正当你犹豫不决之际，异变突生，天空中突然升起一道半球形的壁垒，将你们三人困在了里面，黑色的大手从天而降，将你们三个牢牢压在了地上。"
                 jump bai_sixth_section

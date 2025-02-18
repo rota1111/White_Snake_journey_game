@@ -6,9 +6,9 @@ label bai_sixth_section:
     
     scene bg 21
     "能看到天空之中出现了一道漩涡，不断有奇异的光从你们三人身上散出，被吸走。"
-    show axuan with dissolve
+    show axuan_ with dissolve
     axuan "这是什么。"
-    hide axuan with dissolve
+    hide axuan_ with dissolve
     show xiaoqing with dissolve
     xiaoqing "这就是你的元神之气。等你元气散尽就魂飞魄散再无来世，再无来世。"
     hide xiaoqing with dissolve
@@ -61,10 +61,10 @@ label bai_sixth_section:
     "正当你即将被完全吞噬之时。黑色蛇妖突然被定住。你定睛一看，原来是阿宣再次利用国师剩下的法器启动了锁妖阵。"
     "没等你们二人逃出此地，没想到结界再次升起，将你们二人困在阵内。原来是国师用尽最后一口气，将你们俩锁进了阵中。"
     "此时你们二人的元神正在不断流失，你们依靠自己无法逃出此地，再不做出反抗，你们将会魂飞魄散。"
-    show axuan with dissolve 
+    show axuan_ with dissolve 
     "弥留之际，你看到有人在破阵，你高兴的看向身旁的阿宣。"
-    xiaobai "阿宣，你听外面有人在破阵。"
-    hide axuan with dissolve
+    xiaobai talk"阿宣，你听外面有人在破阵。"
+    hide axuan_ with dissolve
     scene bg 22
     "可是此时阿宣的身躯已经冰冷，你和他的记忆随着魂魄显现在空中，不断被漩涡吸走。"
     
