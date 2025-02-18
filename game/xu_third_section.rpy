@@ -2,7 +2,7 @@ label xu_third_section:
     scene bg 11
     "你和小白小心翼翼地踏入了地宫深处，四周昏暗，只有墙壁上的火把发出微弱的光芒。"
     axuan "跟我来，小白，我们得小心，这里可能有未知的危险。"
-    show xiaobai
+    show xiaobai with dissolve
     xiaobai "小心，阿宣，这里有蹊跷，我们不能大意。"
     "你们沿着石阶向下，发现了一条隐藏的密道。"
     axuan "真没想到，这地宫底下，还有这么一条密道，我们得想办法出去。"
@@ -25,7 +25,7 @@ label xu_third_section:
     "证吾神通 鬼妖丧胆"
     "诛妖除魔 灭形灭神"
     "看到这些文字，你不明所以，但是看见小白神色异常，便知道她似乎明白石碑上的内容。"
-    show xiaobai
+    show xiaobai with dissolve
     xiaobai "阿宣，妖生来就要被赶尽杀绝吗？"
     axuan "天天诛妖除魔，逼我们捕蛇。天下已经乱成这样了，只看到越诛妖除魔，天下越乱。"
     axuan "小白，无论怎样有我在。"
@@ -33,7 +33,7 @@ label xu_third_section:
     scene bg 14
     "由于你复原了石板，地宫的出口也打开了，你和小白走了出去，看到了等在一旁的小青，只见她脸上的愤怒已然消失不见，想必是冷静了下来。"
     "值得一提的是，肚兜作为“人质”，被小青踩在了脚下，看见你们出来，她向小白露出期待的目光。"
-    show xiaobai
+    show xiaobai with dissolve
     xiaobai "小青，我想通了，我跟你走。"
     xiaobai "阿宣，我们就分开吧。"
     axuan "为什么？"

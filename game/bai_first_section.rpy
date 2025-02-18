@@ -5,7 +5,7 @@ label bai_first_section:
 
     xiaobai   "这是哪？我是谁？"
 
-    show laofuren
+    show laofuren with dissolve
     laofuren "你醒了，这里是捕蛇村，你好像什么都想不起来了。"
     
     laofuren "捕蛇队回来了！那天是阿宣救你回来的。"
@@ -15,7 +15,7 @@ label bai_first_section:
     xiaobai   "阿宣？"
 
     scene bg 3
-    show axuan
+    show axuan with dissolve
     "你随着老妇人走出房间，遇到了刚刚归来的捕蛇队。一个少年向你走来。"
 
     axuan "你醒来了？"
@@ -34,26 +34,26 @@ label bai_first_section:
         
         show dudou at left
         dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
-        hide dudou
-        hide axuan
+        hide dudou with dissolve
+        hide axuan with dissolve
         
-        show cunmin
+        show cunmin with dissolve
         cunmin "阿宣你又没捕到蛇，光采草药也抵不了税啊。"
-        hide cunmin
+        hide cunmin with dissolve
 
-        show axuan
+        show axuan with dissolve
         axuan"抵不了税，救人也好啊。"
 
         "你在旁边默默看着，原来阿宣是个善良的人啊。"
         
         "忽然，旁边堆着的竹筐吸引了你的注意，你发现每个竹筐里装的都是蛇，奇怪的是，你似乎能够听懂这些蛇的叫声，你突然头痛欲裂，连忙离开了这里。"
-        hide axuan
+        hide axuan with dissolve
 
-        show laofuren
+        show laofuren with dissolve
         laofuren"阿宣，这姑娘什么都不记得了。"
-        hide laofuren
+        hide laofuren with dissolve
 
-        show   axuan
+        show axuan with dissolve
         axuan"没事的，明天我带你去找到你的地方，没准有什么线索。"
         hide axuan with dissolve
         jump after_if_nod_head
@@ -76,14 +76,14 @@ label bai_first_section:
                 "你已经醒来，不便继续住在陌生人家里，于是你离开了村子，但是你不熟悉路，最终迷失在了丛林中，缺水而死。"
 
                 "弥留之际，你的耳边传来了一道玄妙的声音，那是【生生不息的激荡】，忽然你发现自己回到了做出选择的前一刻。"
-                show axuan
+                show axuan with dissolve
                 jump if_answer
 
     label after_if_nod_head:
         scene bg 5
         "转眼间又是一天过去了，你们俩走在路上。"
         
-        show axuan
+        show axuan with dissolve
         axuan"下面就是我们捕蛇的地方。"
 
         "他指了指面前的瀑布下。"

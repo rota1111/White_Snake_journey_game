@@ -62,7 +62,7 @@ label xu_forth_section:
         axuan "小白！小白！"
         "但见一条体型硕大的白蛇在城内横冲直撞，见过小白原形的你认出了她。"
         axuan "那么大一条那个是小白吗。"
-        show xiaoqing
+        show xiaoqing with dissolve
         "小青不知从哪冒了出来，为你解释了眼前的一切。"
         xiaoqing "你还真回来了，不过姐姐她现在已经变成了一条巨蟒。那道士抢了姐姐的珠钗，不知怎么，却反被姐姐吸了功力。"
         axuan "怎么会这样？"
@@ -73,13 +73,13 @@ label xu_forth_section:
         "听到这里，你意识到大事不好，连忙返回村子，通知村民，当然为了隐藏身份，你特意将尾巴藏进了裤子。"
         scene bg 3
         axuan "大家快走，我们村危险，一条巨蟒马上就要来了，赶紧走别管这村子了。"
-        show cunminjia
+        show cunminjia with dissolve
         cunminjia "瞎说什么呀你，我们村围墙这么高，怕什么巨蟒。"
         axuan "永州城被巨蟒毁了，大家快走吧，赶紧离开。"
-        hide cunminjia
-        show cunminyi
+        hide cunminjia with dissolve
+        show cunminyi with dissolve
         cunminyi "永州是石头城，巨蟒？净瞎说。"
-        hide cunminyi
+        hide cunminyi with dissolve
         da_shen "阿宣，你终于回来了。"
         axuan "大婶您赶紧离开，快。"
         da_shen "那我回去收拾收拾。"
@@ -87,31 +87,31 @@ label xu_forth_section:
     scene bg 18
     xiaren "洞虚演道，太阴真君。"
     "只见村口一声喊叫，随之而来的是浩浩荡荡的朝廷军队，国师就在军队最前方的车架当中。"
-    show guoshi
+    show guoshi with dissolve
     guoshi "一条巨蟒？但你是一只妖怪，又怎知你不是妖言惑众。"
     "说罢，他施展法术，将你控制在空中，让你的尾巴露了出来。"
     axuan "你身为国师，却不能保民平安，净做些祸害人的事。"
-    hide guoshi
-    show cunminbing
+    hide guoshi with dissolve
+    show cunminbing with dissolve
     cunminbing "(惊呼)他真的是妖怪！"
-    hide cunminbing
+    hide cunminbing with dissolve
     axuan "是，我是妖怪了，但我还是阿宣。我赶回来就是为了让你们快逃，永州城毁了，这也会毁了。大家要听我的赶紧离开这。"
     "大家只是一味的震惊你的妖怪身份，甚至露出害怕与厌恶的神色，对你的警告不屑一顾。"
-    show guoshi
+    show guoshi with dissolve
     guoshi "无能小妖。"
     axuan "捕蛇，捕蛇。你为了练功，逼得我们拼着性命到处捕蛇，逼得小白变成了一条巨蟒。"
-    hide guoshi
+    hide guoshi with dissolve
     "突然，远处的山谷传来了巨响，你听出了那是小白爬动的声音。"
 
     menu xu_forth_three:
         "置之不理。":
-            show xiaobai
+            show xiaobai with dissolve
             "你没有理会那巨响，过了一会，小白来到了村子，仇人见面分外眼红，马上和国师打了起来，你和其他村民被战斗的余波击飞了出去，死伤无数。"
             "弥留之际，你的耳边传来了一道玄妙的声音，那是【生生不息的激荡】，忽然你发现自己回到了上一次做出选择的时刻。"
             hide xiaobai with dissolve
             jump xu_forth_three
         "前去拦住小白。":
-            show guoshi
+            show guoshi with dissolve
             axuan "她来了，快放开我，我能拦住她。"
             guoshi "也罢，你去吧。"
             hide guoshi with dissolve

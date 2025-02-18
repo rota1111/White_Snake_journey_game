@@ -2,17 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/bai_third_section.rpy", line 9: expected end of line
-    stop music music3
-               ^
+The label gobang_label is defined twice, at File "game/little-game.rpyc", line 1:
 
-File "game/bai_third_section.rpy", line 14: expected end of line
-    stop music music4
-               ^
+and File "game/script.rpy", line 29:
+label gobang_label:
 
-File "game/xu_final_section.rpy", line 23: expected end of line
-    stop music music2
-               ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue Feb 18 13:42:54 2025
+Tue Feb 18 15:21:17 2025

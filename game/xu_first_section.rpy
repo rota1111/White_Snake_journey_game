@@ -9,7 +9,7 @@ label xu_first_section:
 
     axuan "肚兜！"
     dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
-    show xiaobai
+    show xiaobai with dissolve
     "和肚兜打闹了一会，你才发现你之前救助的白衣女子也站在一旁，你内心十分好奇，想要弄清楚她的身份。"
     menu:
         "你醒来了？":
@@ -24,9 +24,9 @@ label xu_first_section:
         "这时，她的表情才舒缓下来，露出一丝感激的神色，但仍旧没有说话。"
         hide xiaobai
         hide dudou
-        show laofuren
+        show laofuren with dissolve
         laofuren "阿宣，这姑娘什么都不记得了。"
-        hide laofuren
+        hide laofuren with dissolve
         axuan "没事的，明天我带你去找到你的地方，没准有什么线索。"
         "只见那姑娘只是点点头，答应了你的建议。"
 
@@ -44,7 +44,7 @@ label xu_first_section:
 
     scene bg 5
     "走着走着，看到眼前陡峭的山路，你犯了难，不知道怎么带她上去，如果只有你自己，自然可以很容易的爬上去，因为你走了这条路无数次了。"
-    show dudou 
+    show dudou with dissolve
     "就在这时，肚兜不知何时跳上了一处陡崖，正要回到你身旁，没想到脚下一滑，掉了下去。"
     dudou "（惨叫） 嗷~"
     hide dudou with moveoutbottom
@@ -65,12 +65,12 @@ label xu_first_section:
     label xu_first_two:
         "逃过一劫的肚兜脸上露出了胆怯的表情，身体颤抖着躲在你脚边，尾巴无精打采的垂到了地上。"
         axuan "你会法术？"
-        show xiaobai
+        show xiaobai with dissolve
         girl "我自己先上去，你们慢慢上来吧。"
         "说完，她身轻如燕，跳上了山崖。"
         hide xiaobai with dissolve
         "你也不甘落后，奋力追上她的背影。"
-        show xiaobai
+        show xiaobai with dissolve
         "当你追上她之后，你看见她正愣在原地，眉头紧皱，面色痛苦。"
         axuan "你是不是想起什么了？"
         girl "阿宣，你有什么不想做却又不得不做的事吗？"
@@ -89,7 +89,7 @@ label xu_first_section:
             hide xiaobai with dissolve
 
             "小白不语，没有理会你的马屁。但是你终于知道了这位姑娘的身份。"
-            show yuchai
+            show yuchai with dissolve
             "你和小白在田野间散步，突然在一处悬崖边看到了一支玉钗，只见小白再三检查，仍旧没有看出什么特别的，只是发现钗子上印着小小的两个字“宝青”，她不知道这是宝物的名字，还是别的标识，正在她一头雾水之时，你看出来你的疑惑，主动解释道。"
             hide yuchai with dissolve
             axuan "宝青，宝青？啊！我知道了，在永州城外的小树林有一个小作坊，名叫“宝青坊”，你这珠钗肯定是那做的，我们一问便知。"

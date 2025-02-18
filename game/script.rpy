@@ -26,11 +26,10 @@ define xiaren = Character("下人",color = "#f33b1f")
 define cunminbing = Character("村民丙", color = "#bdaeaf")
 # 游戏在此开始。
 
-
 label start:
 
-    scene bg 1 with dissolve
-
+    scene bg 1 with dissolve    
+    
     play music music1
     "2025年1月28日晚，你正在和家人坐在一起看春晚"
     
@@ -150,7 +149,7 @@ label start:
             
             "弥留之际，你的耳边传来了一道玄妙的声音，那是【生生不息的激荡】，忽然你发现自己回到了做出选择的前一刻。"
 
-            show xiaoqing
+            show xiaoqing with dissolve
             jump tupo_choice
 
 

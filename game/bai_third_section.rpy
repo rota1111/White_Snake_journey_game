@@ -1,6 +1,6 @@
 label bai_third_section:
     "永州城附近，两岸连山，碧水潺潺。你们二人正乘着小船前往永州。"
-    show axuan
+    show axuan with dissolve
     axuan"离永州已经不远了，还在想自己的来历？想不起自己的来历，是挺头疼的。"
     axuan"不过呢，很多事记得不如忘了好。人生无常，苦多乐少。既然如此，多记住些美好的时候就好了。"
     play music music3
@@ -14,7 +14,7 @@ label bai_third_section:
     stop music
     scene bg 7
     "突然，天色转暗，风气浪涌，水流湍急。在你们面前有一叶小舟，挡在你们的必经之路上。"
-    show nansheyao
+    show nansheyao with dissolve
     "正当你们靠近时，小舟上的船夫突然现出蛇妖的原形，身形巨大无比，毒牙寒光凌凌，向你们扑来。"
     nansheyao "你果然和人在一起，我取你性命。"
     "看他向你扑来，你决定："
@@ -39,7 +39,7 @@ label bai_third_section:
     hide axuan with dissolve
     scene bg 9
     "你们继续踏上了前往宝青坊的旅程，经过一番寻找，你们来到了宝青坊门前。"
-    show boss
+    show boss with dissolve
     "刚进门，你们便看见了宝青坊的老板娘迎了过来，只见她只见她身姿婀娜，面容姣好，却带着一丝神秘莫测的气息。她穿着一袭青色长裙，裙摆上绣着精致的花纹，随着她的动作轻轻摇曳。她的眼眸深邃，仿佛能洞察人心，嘴角挂着一抹似有若无的微笑，让人捉摸不透她的真实想法。"
     boss "呦，来客人了。姑娘又来敝坊，是法宝有问题？"
 
@@ -47,27 +47,27 @@ label bai_third_section:
         "没有，我们只是随便逛逛。":
             boss "哦？真的吗，那敢问姑娘想要哪种法宝，本坊有各种各样的宝贝，从灵珠到仙草，从法宝到神器，应有尽有。不过，每一件都有它的代价。"
             "她转身，目光在你们身上扫过，仿佛在评估你们的价值。你微微皱眉，虽然有些失忆，但直觉告诉你，这里的每一件东西都不是轻易能得到的。"
-            hide boss
-            show axuan
+            hide boss with dissolve 
+            show axuan with dissolve
             "阿宣则显得有些紧张，他紧紧握住你的手，低声说道："
             axuan "小白，我们得小心，这里的一切看起来都很不寻常。"
-            hide axuan
-            show boss
+            hide axuan with dissolve
+            show boss with dissolve
             "老板娘似乎察觉到了阿宣的紧张，她轻笑一声，继续说道："
             boss "比如姑娘头上这件‘忘忧玉钗’，它能够吸取他人法力为己所用，但代价是……她故意停顿了一下，眼神中闪过一丝狡黠，"
             boss "它会取走使用者的记忆，使用的越多，记忆丧失的也越多。"
-            hide boss
+            hide boss with dissolve
             jump after_is_fabao_has_problem
         "对，我们想知道这法宝的来历。":
             boss "姑娘头上这件‘忘忧玉钗’，它能够吸取他人法力为己所用，但代价是……她故意停顿了一下，眼神中闪过一丝狡黠，"
             boss "它会取走使用者的记忆，使用的越多，记忆丧失的也越多。"
-            hide boss
+            hide boss with dissolve
             jump after_is_fabao_has_problem
     label after_is_fabao_has_problem:
-        show axuan
+        show axuan with dissolve
         axuan "我说呢，我遇到她的时候，她就失去了记忆。记忆消失，还要法力干什么。"
-        hide axuan
-        show boss
+        hide axuan with dissolve
+        show boss with dissolve
         boss "天之道，有所得，必有所失。这种移花接木，改变乾坤之事，我十分感兴趣。"
         boss "而且这只玉钗最初的主人并不是你，而是另有其人。"
         xiaobai  "那关于原主人，你能帮我们找到一些线索吗？"
@@ -76,14 +76,14 @@ label bai_third_section:
         "你拿起了这片蛇鳞，细细感受了一下它，发现这片蛇鳞上的法力，与你同宗同源，突然你缺失的记忆全部涌入了你的脑海。"        
         "你与阿宣走出了宝青坊，没过多久，迎面走来一个身披斗篷的黑衣人。"
         scene bg 10
-        show black_man
+        show black_man with dissolve
         black_man "捕蛇人？"
         "话音未落，黑衣人向你身旁的阿宣冲过去，你知道来者不善，决定："
         menu attack_black_man:
             "先保护自己，伺机而动。":
                 "只见黑衣人下手狠毒，将阿宣一掌打飞数米，随后重重落在地上，阿宣昏迷不醒，生死未卜。"
                 "看到解决了威胁，黑衣人摘下了兜帽，露出了本来的面目。"
-                hide black_man
+                hide black_man with dissolve
                 show xiaoqing with dissolve
                 xiaoqing "小白！"
                 "你认出了黑衣人是你的妹妹小青，你十分好奇她为什么会在这。"
@@ -102,7 +102,7 @@ label bai_third_section:
             "挡住敌人，保护阿宣":
                 "你与黑衣人对了一掌，掌风鼓动，周围的空气仿佛都被震得微微颤抖，四周的树叶被强劲的掌风扫落，纷纷扬扬地飘散开来。你们二人势均力敌，谁也无法在这一击中占据上风。你感到一股强大的力量从掌心传来，震得手臂微微发麻，但你的眼神却更加坚定。"
                 "就在这时，黑衣人突然摘下了兜帽，露出了本来的面目。你愣了一下，随后惊讶地喊道"
-                hide black_man
+                hide black_man with dissolve
                 show xiaoqing with dissolve
                 xiaobai "小青？！"
                 "小青的脸在月光下显得格外冷峻，她的眼神中带着一丝复杂的情绪，既有愤怒，也有无奈。她冷冷地看着你，语气中带着一丝责备。"

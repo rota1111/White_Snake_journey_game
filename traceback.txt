@@ -1,40 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/bai_third_section.rpy", line 6, in script
-    play music music3
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/bai_third_section.rpy", line 6, in <module>
-    play music music3
-NameError: name 'music3' is not defined
+  File "game/xu_third_section.rpy", line 5, in script
+    show xiaobai dissolve
+Exception: Image 'xiaobai' does not accept attributes 'dissolve'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/bai_third_section.rpy", line 6, in script
-    play music music3
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
-    self.call("execute")
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/bai_third_section.rpy", line 6, in <module>
-    play music music3
-NameError: name 'music3' is not defined
+  File "game/xu_third_section.rpy", line 5, in script
+    show xiaobai dissolve
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1117, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1080, in show_imspec
+    renpy.config.show(name,
+  File "D:\renpy-8.3.4-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "D:\renpy-8.3.4-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "D:\renpy-8.3.4-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "D:\renpy-8.3.4-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'xiaobai' does not accept attributes 'dissolve'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.4.24120703
 白蛇之旅 1.3
-Tue Feb 18 14:10:22 2025
+Tue Feb 18 17:25:46 2025

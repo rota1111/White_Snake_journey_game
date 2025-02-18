@@ -9,13 +9,13 @@ label bai_second_section:
 
     menu cisha_guoshi:
         "在窗户上开一个洞，观察情况":
-            show guoshi
+            show guoshi with dissolve
             "你看到国师正在吸取蛇妖的法力修炼，你操控着玉钗，准备从他的后背偷袭，可惜你的修为尚浅，无法破开他的防御，反而被一旁警戒的弟子发现。"
             "你与他交手数招，但仍是不敌，最终你被打落到海底，失去了意识。"
             hide guoshi with dissolve
             jump after_cisha_guoshi
         "直接闯入，刺杀国师。 ":
-            show guoshi
+            show guoshi with dissolve
             "你莽撞的从正面闯入，正好撞上正在警戒的侍卫，双拳难敌四手，你被众人围住无法脱身，最终被修炼结束的国师亲手处决。"
             "弥留之际，你的耳边传来了一道玄妙的声音，那是【生生不息的激荡】，忽然你发现自己回到了做出选择的前一刻。"
             hide guoshi with dissolve
@@ -51,7 +51,7 @@ label bai_second_section:
                     "阿宣拿起玉钗细细检查。发现钗子上印着小小的两个字“宝青”两个字。"
                     jump after_jiancha
             label after_jiancha:
-                show axuan
+                show axuan with dissolve
                 axuan"宝青，宝青？啊！我知道了，在永州城外的小树林有一个小作坊，名叫“宝青坊”，你这珠钗肯定是那做的，我们一问便知。"
                 "你也想弄清楚这个法器的来历，于是你们便踏上了新的旅途。"
                 hide axuan with dissolve

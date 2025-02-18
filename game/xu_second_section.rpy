@@ -14,9 +14,9 @@ label xu_second_section:
             axuan "大叔，你唱的调子也太老了吧，都什么朝代了，我来唱吧。"
             "说完，他跳上了桅杆，唱起歌来~"
             play music music4
-            show xiaobai
+            show xiaobai with dissolve
             "小白不语，只是一味的偷笑，你也一头雾水，不知道是好听还是不好听。"
-            hide xiaobai
+            hide xiaobai with dissolve
             stop music
             jump xu_second_one
     label xu_second_one:
@@ -37,8 +37,8 @@ label xu_second_section:
             "你躲在了船夫的身后，船夫一脸震惊的看着你，欲言又止，他只是带着你连忙躲在船舱内。"
             jump xu_second_two
     label xu_second_two:
-        hide nansheyao
-        show xiaobai 
+        hide nansheyao with dissolve
+        show xiaobai with dissolve
         "危急之时，只见小白化身成了一条白蛇，用锋利的尾巴一扫，将来势汹汹的蛇妖斩落水下，成功逃过一劫。但是由于她用力过猛，法力失控，昏了过去。"
         "你看到昏倒的小白，决定将她带到附近的寺庙中修养。"
         hide xiaobai with dissolve
@@ -67,7 +67,7 @@ label xu_second_section:
         "你耐心的解释抱着你的缘由。"
     
     axuan "在你昏过去之后，法力外泄，身上冷的像冰块一样，于是我将身体当作暖炉，你才醒过来了的。"
-    show xiaobai
+    show xiaobai with dissolve
     xiaobai "你看到我的尾巴了吧，我是个妖怪。"
     menu:
         "妖精受死。":
@@ -92,17 +92,17 @@ label xu_second_section:
         "没有，我们只是随便逛逛。":
             boss "哦？真的吗，那敢问公子想要哪种法宝，本坊有各种各样的宝贝，从灵珠到仙草，从法宝到神器，应有尽有。不过，每一件都有它的代价。"
             "她转身，目光在你们身上扫过，仿佛在评估你们的价值。你微微皱眉，虽然不明真相，但直觉告诉你，这里的每一件东西都不是轻易能得到的。"
-            hide boss
-            show xiaobai
+            hide boss with dissolve
+            show xiaobai with dissolve
             "小白则显得有些紧张，她紧紧握住你的手，低声说道："
             xiaobai "阿宣，我们得小心，这里的一切看起来都很不寻常。"
-            hide xiaobai
-            show boss
+            hide xiaobai with dissolve
+            show boss with dissolve
             "老板娘似乎察觉到了小白的紧张，她轻笑一声，继续说道："
             boss "比如姑娘头上这件‘忘忧玉钗’，它能够吸取他人法力为己所用，但代价是……"
             "她故意停顿了一下，眼神中闪过一丝狡黠，"
             boss "它会取走使用者的记忆，使用的越多，记忆丧失的也越多。"
-            hide boss
+            hide boss with dissolve
             jump xu_second_four
         "对，我们想知道这法宝的来历。":
             boss "比如姑娘头上这件‘忘忧玉钗’，它能够吸取他人法力为己所用，但代价是……"
@@ -111,21 +111,21 @@ label xu_second_section:
             axuan "我说呢，我遇到她的时候，她就失去了记忆。记忆消失，还要法力干什么。"
             boss "天之道，有所得，必有所失。这种移花接木，改变乾坤之事，我十分感兴趣。"
             boss "而且这只玉钗最初的主人并不是你，而是另有其人。"
-            hide boss
-            show xiaobai
+            hide boss with dissolve
+            show xiaobai with dissolve
             xiaobai "那关于原主人，你能帮我们找到一些线索吗？"
-            hide xiaobai
-            show boss
+            hide xiaobai with dissolve
+            show boss with dissolve
             boss "当然这片蛇鳞就是原主人之物。"
-            hide boss
-            show xiaobai
+            hide boss with dissolve
+            show xiaobai with dissolve
             "小白拿起了这片蛇鳞，细细感受了一下它，过了许久，她终于回过神来，却一言不发。"
-            hide xiaobai
+            hide xiaobai with dissolve
             jump xu_second_four
     label xu_second_four:
         scene bg 10
         "你与阿宣走出了宝青坊，没过多久，迎面走来一个身披斗篷的黑衣人。"
-        show black_man
+        show black_man with dissolve
         black_man "捕蛇人？"
         "话音未落，黑衣人向你冲过来，你知道来者不善，决定："
 
@@ -146,11 +146,11 @@ label xu_second_section:
         xiaobai "小青？！"
         "小青的脸在月光下显得格外冷峻，她的眼神中带着一丝复杂的情绪，既有愤怒，也有无奈。她冷冷地看着她，语气中带着一丝责备。"
         xiaoqing "小白，你到底在做什么？师傅派我来带你回去，没想到你竟然和捕蛇人混在一起，还和我动手！"
-        hide xiaoqing
-        show xiaobai
+        hide xiaoqing with dissolve
+        show xiaobai with dissolve
         xiaobai "小青，我不是叛徒。阿宣不是普通的捕蛇人。他救了我，照顾我，甚至愿意为我放弃一切。"
-        hide xiaobai
-        show xiaoqing
+        hide xiaobai with dissolve
+        show xiaoqing with dissolve
         xiaoqing "国师修炼的太阴真功，和我们蛇族同出一脉，他吸取我们的魂魄精华修炼他的功力，师傅恨透了国师，恨透了人，师傅说，人心险恶，只要是人就险恶！"
 
     menu:

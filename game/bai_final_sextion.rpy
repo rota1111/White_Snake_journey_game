@@ -2,14 +2,14 @@ label bai_final_section:
     scene bg 24
     "思绪回到现在（五百年后），你从玉钗中获取的记忆已了然于心，你现在终于知道自己屡屡突破失败的原因。"
     xiaobai "最后一刻我保住了他的魂魄。"
-    show xiaoqing
+    show xiaoqing with dissolve
     xiaoqing "但珠钗发动，你的功力全失，化回白蛇。我是用尽了最后一丝气力将这些记忆封印在了珠钗之中，今日你终于又打开了。"
     xiaobai "记忆能打开，正果还是不能修得，还是不能解脱，一时欢情，我记了五百年。他魂魄犹在，定是投胎转世，到世间的某处了，我要找到他。"
     hide xiaoqing with dissolve
     play music music2
     scene bg 23
     "一天上午，春雨蒙蒙，你和小青走在桥上，有意落下那支珠钗。"
-    show young_man
+    show young_man with dissolve
     young_man "姑娘，你的珠钗掉了。"
     xiaobai "谢谢官人。"
     young_man "这珠钗年代久远，可是宝贵之物"
