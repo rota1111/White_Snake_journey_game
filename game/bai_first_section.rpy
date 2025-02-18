@@ -28,14 +28,15 @@ label bai_first_section:
         "连忙问道：是你救了我？":
             jump not_nod_head
     label nod_head:
-        "他看到你只是点点头，便简单回应了一下，转身逗起了一直跟着他的小狗。"        
+        "他看到你只是点点头，便简单回应了一下，转身逗起了一直跟着他的小狗。"     
+        hide axuan_ with dissolve   
         show dudou with moveintop
         axuan"肚兜！"
         play music music6
         dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
         stop music
         hide dudou with dissolve
-        hide axuan_ with dissolve
+        
         
         show cunmin with dissolve
         cunmin "阿宣你又没捕到蛇，光采草药也抵不了税啊。"
