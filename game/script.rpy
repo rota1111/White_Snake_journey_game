@@ -1,7 +1,6 @@
 ﻿# 游戏的脚本可置于此文件中。
 
 # 声明此游戏使用的角色。颜色参数可使角色姓名着色。
-
 define me = Character("我",color="#CCCCCC")
 define xiaoqing = Character("小青",color="#00FFFF")
 define axuan = Character("阿宣",color="#FF0000", image="axuan")
@@ -11,7 +10,7 @@ define girl = Character("姑娘",color="#FFFFFF")
 define xiaobai = Character("小白",color="#FFFFFF", image="xiaobai")
 define cunmin = Character("村民",color="#E3CF57")
 define boss = Character("老板娘",color="#8A2BE2")
-define black_man = Character("黑衣人",color="#000000")
+define black_man = Character("黑衣人",color="#00FFFF")
 define nansheyao = Character("男蛇妖",color="#802A2A")
 define guo_shi_di_zi = Character("国师弟子",color = "#9932CC")
 define guoshi = Character("国师",color = "#9932CC")
@@ -24,8 +23,8 @@ define cunminyi = Character("村民乙", color = "#ed4845")
 define da_shen = Character("大婶", color="#f2b9b2")
 define xiaren = Character("下人",color = "#f33b1f")
 define cunminbing = Character("村民丙", color = "#bdaeaf")
-# 游戏在此开始。
 
+# 游戏在此开始。
 image side axuan talk = "images/axuan talk.png"
 image side xiaobai talk = "images/xiaobai talk.png"
 image side young_man talk = "images/young_man talk.png"

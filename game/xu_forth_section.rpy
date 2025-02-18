@@ -31,8 +31,8 @@ label xu_forth_section:
     axuan talk "这不成啊这！"
     "话音未落，你眼前一黑，失去了知觉。"
     hide boss with dissolve
-    show dudou with dissolve
     scene bg 15
+    show dudou with dissolve
     dudou "汪汪！"
     "你被肚兜舔醒了，刚回过神，你连忙朝下看去，身上并未缺少什么零件，你终于放下了紧张的心。"
     axuan talk "还好还在。"

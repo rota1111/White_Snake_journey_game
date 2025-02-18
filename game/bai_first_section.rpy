@@ -31,8 +31,9 @@ label bai_first_section:
         "他看到你只是点点头，便简单回应了一下，转身逗起了一直跟着他的小狗。"        
         show dudou with moveintop
         axuan"肚兜！"
-        
+        play music music6
         dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
+        stop music
         hide dudou with dissolve
         hide axuan_ with dissolve
         
@@ -100,7 +101,6 @@ label bai_first_section:
 
         menu:
             "原地不动":
-
                 "你没有理会眼前紧急的一幕，但是阿宣顾不上这么多，为了救自己的爱犬，也莽撞的跟着跳下了悬崖。看到自己的救命恩人也遇到了危险，你这才有些动容"
                 hide axuan_ with moveoutbottom
                 "你决定"
@@ -108,11 +108,9 @@ label bai_first_section:
                     "原地不动":
                         "看到一人一狗双双坠入悬崖，冷漠的你并没有太大的情感波动，正当你打算离开时，突然眼前一黑，耳边传来了一道玄妙的声音，你知道，大致的意思是由于关键人物许宣坠崖身亡，你无法完成了却与他的因果的任务，忽然你发现自己回到了做出选择的前一刻。"
                         jump after_dorong_choice
-                    "跳崖救人":
-                        
+                    "跳崖救人": 
                         "你正要跳崖救人，手指顺势朝向阿宣的方向，没想到，你的手中窜出一道法力，拖住了他，将他救了回来。不远处的肚兜也被你顺手施救。"
                         show axuan_ with moveouttop
-                        show dudou with moveouttop 
                         jump after_save_dog
                     "伸手援助":
                         "你正要跳崖救人，手指顺势朝向阿宣的方向，没想到，你的手中窜出一道法力，拖住了他，将他救了回来。不远处的肚兜也被你顺手施救。"

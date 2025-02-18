@@ -64,10 +64,11 @@ label xu_second_section:
             jump label_xu_second_four
 
     label after_label_xu_second_four:
+        show xiaobai_ with dissolve
+        "再次醒来，你发现一旁的小白大惊失色，连忙推开你的手臂。"
         "你耐心的解释抱着你的缘由。"
     
     axuan talk "在你昏过去之后，法力外泄，身上冷的像冰块一样，于是我将身体当作暖炉，你才醒过来了的。"
-    show xiaobai_ with dissolve
     xiaobai "你看到我的尾巴了吧，我是个妖怪。"
     menu:
         "妖精受死。":

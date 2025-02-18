@@ -8,7 +8,9 @@ label xu_first_section:
     "你刚进大门，就见一只大黄狗迎了上来，你知道这是你的伙伴，你给它起名叫做肚兜。"
 
     axuan talk "肚兜！"
+    play music music6
     dudou "旺旺（摇着尾巴舔了舔阿宣的手）"
+    stop music
     hide dudou with moveintop
     show xiaobai_ with dissolve
     "和肚兜打闹了一会，你才发现你之前救助的白衣女子也站在一旁，你内心十分好奇，想要弄清楚她的身份。"
@@ -36,7 +38,7 @@ label xu_first_section:
         
         axuan talk "下面就是我们捕蛇的地方。"
         "你指了指面前的瀑布下。"
-        "你们为什么要捕蛇？"
+        xiaobai "你们为什么要捕蛇？"
         axuan talk "近些年，天下越来越乱，赋税也越来越重。国师府说，捕蛇可以抵税可以不被拉丁充劳役。大家就聚到一起捕蛇来了。捕蛇凶险，可是不捕蛇就更凶险。"
         girl "那捕到的蛇有什么用呢？"
         axuan talk"谁知道呢，也许是吃了或者做成了药材？"
@@ -46,7 +48,9 @@ label xu_first_section:
     "走着走着，看到眼前陡峭的山路，你犯了难，不知道怎么带她上去，如果只有你自己，自然可以很容易的爬上去，因为你走了这条路无数次了。"
     show dudou with dissolve
     "就在这时，肚兜不知何时跳上了一处陡崖，正要回到你身旁，没想到脚下一滑，掉了下去。"
+    play music music7
     dudou "（惨叫） 嗷~"
+    stop music
     hide dudou with moveoutbottom
     axuan talk "（大喊）肚兜！"
     menu:

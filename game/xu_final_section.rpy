@@ -16,7 +16,7 @@ label xu_final_section:
             young_man talk"小娘子看着好生面善，是何方之人。"
             xiaobai "说来话长..."
             hide xiaobai_ with dissolve
-            scene bg 2
+            scene bg 2 with dissolve
             jump xu_final_one
     label xu_final_one:
         scene bg 1

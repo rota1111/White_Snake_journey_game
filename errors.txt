@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/xu_first_section.rpy", line 7: expected 'simple_expression' not found.
-    show dudou at with moveintop
-                  ^
+File "game/bai_first_section.rpy", line 34: expected end of line
+    play music music 6
+                     ^
+
+File "game/xu_first_section.rpy", line 11: expected end of line
+    play music music 6
+                     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue Feb 18 18:25:51 2025
+Tue Feb 18 20:14:27 2025
