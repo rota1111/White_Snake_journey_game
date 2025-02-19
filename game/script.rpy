@@ -91,7 +91,6 @@ init python:
 
         matrix[row][col] = not matrix[row][col]
 label start:
-    call screen whack_a_mole()
     scene section start with Dissolve(3)
     scene bg 1 with dissolve    
     
