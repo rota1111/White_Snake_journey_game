@@ -67,8 +67,30 @@ init python:
         if all(element == False for row in matrix for element in row):
             return Return()
 
-label start:
+    def mole_appearing(matrix):
 
+        num_rows = len(matrix)
+        num_cols = len(matrix[0])
+
+        for i in range(num_rows):
+            for j in range(num_cols):
+                matrix[i][j] = False
+
+        num_true = renpy.random.randint(1, 3)
+
+        for _ in range(num_true):
+            row = renpy.random.randint(0, num_rows-1)
+            col = renpy.random.randint(0, num_cols-1)
+
+            matrix[row][col] = True
+
+    def toggle_element2(matrix, n):
+
+        row = n // len(matrix[0])
+        col = n % len(matrix[0])
+
+        matrix[row][col] = not matrix[row][col]
+label start:
     scene section start with Dissolve(3)
     scene bg 1 with dissolve    
     
