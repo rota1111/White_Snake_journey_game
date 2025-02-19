@@ -1,6 +1,6 @@
 label bai_third_section:
     scene section b3 with Dissolve(3)
-    scene bg 3
+    scene bg 6
     "永州城附近，两岸连山，碧水潺潺。你们二人正乘着小船前往永州。"
     show axuan_ with dissolve
     axuan"离永州已经不远了，还在想自己的来历？想不起自己的来历，是挺头疼的。"
