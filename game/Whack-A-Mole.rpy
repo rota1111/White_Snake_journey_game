@@ -1,3 +1,6 @@
+screen lights_rule2():
+    fixed:
+        text "熄灭所有亮起石块 2.0" xalign 0.5 yalign 0.5
 screen whack_a_mole(c=7, r=5):
 
     default matrix = [[False for _ in range(c)] for _ in range(r)]
