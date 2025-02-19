@@ -26,4 +26,4 @@ screen whack_a_mole(c=7, r=5):
                     NullAction()
                 )
 
-    timer renpy.random.randint(1, 2) action Function(mole_appearing, matrix) repeat True
+    timer renpy.random.random() action Function(mole_appearing, matrix) repeat True

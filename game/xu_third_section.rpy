@@ -23,6 +23,9 @@ label xu_third_section:
     show screen lights_rule()
     hide screen lights_rule with Dissolve(3)
     call screen lights_out()
+    show screen lights_rule2()
+    hide screen lights_rule2 with Dissolve(3)
+    call screen whack_a_mole()
     "经过尝试，你终于复原了这个石碑，只见石碑上写着："
     "天地玄宗 万无本根"
     "精怪亡形 广修亿劫"
