@@ -19,7 +19,10 @@ label xu_third_section:
     axuan talk "这地底下怎么会有一个道家机关呢？想必原来是一个道观，荒废了，后来又在上面建了一座塔。"
     xiaobai "没事，这个阵势有迹可循，我们一定能出去。"
     hide xiaobai_ with dissolve
-    "你开始研究机关，你发现这个阵势像是一幅杂乱的文字石碑，又许多个可移动的小石块组成。"
+    "你开始研究机关，你发现这个阵势像是一幅杂乱的文字石碑，又由许多个被点亮的小石块组成。"
+    show screen lights_rule()
+    hide screen lights_rule with Dissolve(3)
+    call screen lights_out()
     "经过尝试，你终于复原了这个石碑，只见石碑上写着："
     "天地玄宗 万无本根"
     "精怪亡形 广修亿劫"

@@ -29,7 +29,46 @@ image side axuan talk = "images/axuan talk.png"
 image side xiaobai talk = "images/xiaobai talk.png"
 image side young_man talk = "images/young_man talk.png"
 
+image light_True_idle = 'images/stone.jpg'
+image light_True_hover = Transform('images/stone.jpg', matrixcolor=BrightnessMatrix(0.5))
+image light_False_idle = Transform('images/stone.jpg', matrixcolor=BrightnessMatrix(-0.3))
+image light_False_hover = Transform('images/stone.jpg', matrixcolor=BrightnessMatrix(-0.3))
+
+init python:
+
+    def find_element(matrix, n):
+        num_cols = len(matrix[0])
+
+        # 计算元素的行和列索引
+        row = n // num_cols
+        col = n % num_cols
+
+        return matrix[row][col]
+
+    def toggle_elements(matrix, n):
+
+        num_rows = len(matrix)
+        num_cols = len(matrix[0])
+
+        row = n // num_cols
+        col = n % num_cols
+
+        matrix[row][col] = not matrix[row][col] #它本身
+
+        if row > 0: #上
+            matrix[row-1][col] = not matrix[row-1][col]
+        if row < num_rows-1: #下
+            matrix[row+1][col] = not matrix[row+1][col]
+        if col > 0: #左
+            matrix[row][col-1] = not matrix[row][col-1]
+        if col < num_cols-1: #右
+            matrix[row][col+1] = not matrix[row][col+1]
+
+        if all(element == False for row in matrix for element in row):
+            return Return()
+
 label start:
+
     scene section start with Dissolve(3)
     scene bg 1 with dissolve    
     
