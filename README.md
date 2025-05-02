@@ -5,6 +5,7 @@
 .
 ├── README.md
 ├── errors.txt                  // 错误日志
+├── copy.md                     // 剧情文案
 ├── game
 │   ├── SourceHanSansLite.ttf   // 字体
 │   ├── audio/                  // 音频文件
