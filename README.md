@@ -14,7 +14,7 @@
 │   ├── gui.rpy                 // 所有GUI相关变量定义
 │   ├── images/                 // 图片文件
 │   ├── options.rpy             // 配置和构筑相关变量
-│   ├── saves
+│   ├── saves                   // 游戏存档
 │   ├── screens.rpy             // 界面定义
 │   ├── script.rpy              // 开始章节剧情脚本
 │   ├── xu_or_bai_*_section.rpy // 不同章节剧情脚本
@@ -22,5 +22,7 @@
 ├── log.txt                     // 日志记录
 └── project.json 
 ```
-## 游玩说明  
-点击右侧realse下载发行版本,解压点击exe版本游玩
+## 游玩指南 
+点击右侧realse下载发行版本,解压点击exe版本游玩  
+
+除了正常的galgame流程外，还加入两个小游戏，点灯与打地鼠。
